@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <script src="js.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+
+</head>
+<body>
+  <section id="firstSection">
+  
+  <article>
+                    <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+                    <img src="img/newsImages/box_back.jpg" alt="">
+                    <h2 id="title"><a href="#">მაღაზიის სახელი</a></h2>
+                    <hgroup id="hName">
+                        <h3>სახელი:</h3>
+                        <h3 id="productName">Pro Name</h3>
+
+                    </hgroup>
+
+                    <hgroup id="hPrices">
+
+                        <h3 id="price">ფასი:</h3>
+                        <h3 id="oldPrice">100</h3>
+                        <h3 id="emoji"><i class="fas fa-arrow-right"></i></h3>
+                        <h3 id="newPrice">50</h3>
+                    </hgroup>
+
+                    <div class="time"><i class="far fa-clock"></i>
+                        <p id="timeLeft"> </p>
+                    </div>
+
+                    <figure id="socials">
+
+                        <a href="#" class="fb"><i class="fab fa-facebook-f" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share On Facebook"></i></a>
+                        <a href="#" class="twitt"><i class="fab fa-twitter" data-toggle="tooltip" data-placement="bottom" title="" data-original-title="Tweet On Twitter"></i></a>
+                        <a class="pin" href="#"><i class="fab fa-pinterest-p" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Pin on Pinterest"></i></a>
+                        <a href="#" class="insta"><i class="fab fa-instagram" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Post On Instagram"></i></a>
+                        <a href="#"><i class="fas fa-star" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Subscribe"></i></a>
+
+                    </figure>
+
+                </article>
+  </section>
+  
+  <div  id="forms">
+  <select id="titleput"> <br>
+    <option value="გრენდო">gurami</option>
+    <option value="ფსკერი">zoro</option>
+    <option value="ნიღაბი">nigabi</option>
+    </select><br>
+   <input type="date" id="date"><br>
+    <input type="text" placeholder="product name" id="producttName"><br>
+    <input type="text" placeholder="dzveli fasi" id="old"><br>
+    <input type="text" placeholder="axali fasi" id="new"><br>
+   <button onclick="go()">Show Me</button><br>
+   </div>
+   <p id="outer"></p>
+    
+</body>
+</html>

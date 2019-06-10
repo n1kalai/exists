@@ -1,0 +1,575 @@
+@font-face {
+    font-family: mtav;
+    src: url(../fonts/mtavruli.ttf)
+}
+
+@font-face {
+    font-family: nusx;
+    src: url(../fonts/nusx.ttf)
+}
+
+@font-face {
+    font-family: pariz;
+    src: url(../fonts/parizuli.ttf)
+}
+
+@font-face {
+    font-family: italy;
+    src: url(../fonts/italiuri.ttf)
+}
+
+@font-face {
+    font-family: headline;
+    src: url(../fonts/kupiura.ttf)
+}
+
+@font-face {
+    font-family: mine;
+    src: url(../fonts/minecraft.ttf)
+}
+
+@font-face {
+    font-family: alaverd;
+    src: url(../fonts/alaverdi.ttf)
+}
+
+
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background: #f6f6f6;
+}
+
+/* Header + Nav Styles Start */
+#mainHeader {
+    background: #1eb2d5;
+    width: 100%;
+    position: absolute;
+    top: 10px;
+
+}
+
+#mainHeader .logo {
+    width: 5%;
+}
+
+#mainHeader a {
+    display: block;
+    float: left;
+}
+
+#mainHeader a img {
+    width: 100%;
+    margin: 2px 2px 2px 2px
+}
+
+header #los {
+    float: left;
+    line-height: 40px;
+    font-family: mtav;
+    font-size: 18px;
+    font-weight: 500;
+    margin-left: 10px;
+}
+
+u {
+    text-decoration: underline white;
+}
+
+#mainHeader nav #headerMenu {
+    width: 32.5%;
+    list-style: none;
+    float: right;
+    margin-top: 1.8%;
+}
+
+#mainHeader nav #headerMenu li a {
+    text-decoration: none;
+    padding: 0 5px;
+}
+
+#mainHeader nav #headerMenu li a {
+    font-family: mtav;
+    font-size: 20px;
+}
+
+/* Links Hover Effect */
+
+.nav-item {
+    border: none;
+}
+
+.nav-link {
+    position: relative;
+    transition: .5s;
+    color: white;
+    font-size: 20px;
+}
+
+.nav-link:hover {
+    color: #1eb2d5;
+    background-color: white;
+}
+
+.nav-link:after {
+    content: '';
+    position: absolute;
+    top: 5px;
+    right: 15px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid white;
+    border-width: 3px 3px 0 0;
+    transition: .5s;
+    opacity: 0;
+}
+
+/*top: -3px; right: -4px;*/
+.nav-link:hover:after {
+    top: -8px;
+    right: -8px;
+    opacity: 1;
+}
+
+.nav-link:before {
+    content: '';
+    position: absolute;
+    bottom: 5px;
+    left: 15px;
+    width: 12px;
+    height: 12px;
+    border: 3px solid white;
+    border-width: 0 0 3px 3px;
+    transition: .5s;
+    opacity: 0;
+}
+
+/*bottom: -8px;left: -4px*/
+.nav-link:hover:before {
+    bottom: -8px;
+    left: -8px;
+    opacity: 1;
+}
+
+
+/* Header + Nav Styles End */
+
+#regMain {
+    width: 80%;
+    margin: 50px auto;
+    display: flex;
+    flex-direction: row;
+    margin-top: 12%;
+    overflow: hidden;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border: solid 1px #1eb2d5
+}
+
+#regMain article {
+    width: 50%;
+    font-family: mtav;
+}
+
+/* H2 */
+#regMain article header #logH {
+    color: #1fccf5;
+}
+
+#regMain #logIn {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#regMain #logIn #lForm {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/*
+#regMain #logIn {
+    
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    border-bottom-right-radius: 100px;
+    border-top-right-radius: 100px;
+    box-shadow: 5px 5px 30px white inset;
+}
+*/
+
+/* P recover */
+#regMain #logIn a {
+    text-decoration: none;
+    text-align: center;
+    width: 46%;
+    margin-top: -5.5%;
+    margin-left: 45.5%;
+    padding: 0;
+
+}
+
+/* Eye + Recovery */
+
+#regMain #logIn #eyeRec {
+
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+
+}
+
+#regMain #logIn #eyeRec i {
+
+    margin-top: -7%;
+    color: #1eb2d5;
+    cursor: pointer;
+}
+
+#regMain #logIn a #recover {
+
+    margin-top: -3%;
+    padding: 0;
+    font-size: 10px;
+    color: #1eb2d5;
+    font-weight: 900;
+}
+
+/* Left Side Article Styles */
+
+/* Input Styles */
+
+
+#regMain #logIn input {
+
+    width: 100%;
+    padding: 13px 0 13px 20px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid 1px #1eb2d5;
+    outline: none;
+    color: #1eb2d5;
+    font-weight: 900;
+    transition: all .4s;
+
+}
+
+#regMain #logIn #eyeRec #show2 {
+
+    transition: all 1.4s;
+}
+
+
+
+
+
+#regMain #logIn input::placeholder {
+    color: #1eb2d5;
+    font-family: nusx;
+    font-weight: 900;
+    font-size: 17px;
+
+}
+
+
+
+/* Button Styles */
+
+#regMain #logIn button {
+
+    width: 110%;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-sizing: border-box;
+    color: white;
+}
+
+#regMain #logIn #logedIn {
+    padding: 10px 0;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -webkit-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -moz-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -o-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -ms-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+}
+
+#regMain #logIn #fb {
+
+    background: linear-gradient(to bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -webkit-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -moz-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -o-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -ms-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    font-size: 20px;
+    padding: 10px 0;
+    width: 110%;
+
+}
+
+/* Left Styles Articles End */
+
+
+/*===========================================*/
+
+/* Right Articles Styles Start */
+
+/* registraciiis fortochkis stilebis dasawyisi */
+#reg {
+    text-align: center;
+    border-left: solid 1px #1eb2d5;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    position: relative;
+}
+
+#reg #regH {
+    color: #1eb2d5
+}
+
+#reg article {
+    width: 50%;
+    height: 57%;
+    float: left;
+
+
+}
+
+#reg article h2 {
+    color: #1eb2d5;
+    font-family: nusx;
+    line-height: 150px;
+    cursor: pointer;
+    transition: color .4s;
+}
+
+#reg article h2:hover {
+    color: darkcyan;
+    transition: transform .2s ease-in-out;
+}
+
+/* registraciiis fortochkis stilebis dasasruli */
+
+/* fizikuri pirebis registraciis fankris stilebis dasawyisi */
+
+
+#fizpirbox {
+    width: 100%;
+    height: 79%;
+    background: #f6f6f6;
+    position: absolute;
+    bottom: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    perspective: 500;
+    transform: rotateX(90deg);
+    transition: all .4s;
+    
+
+}
+
+
+#fizikuriPiri h2 {transition: all .8s;}
+.open #fizpirbox {
+    
+   transform: rotateX(0deg);
+ 
+}
+
+.open #close {display: block !important;}
+.open h2 {display: flex;left: -5%;top: 21%;}
+
+
+.open h2 {position: absolute;z-index: 1;transform: rotate(-90deg);}
+
+#fizpirbox input {
+    width: 40%;
+    display: table;
+    padding: 13px 0 13px 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid 1px #1eb2d5;
+    outline: none;
+    color: #1eb2d5;
+    font-weight: 900;
+    transition: all .4s;
+}
+
+#fizpirbox input::placeholder {
+    color: #1eb2d5;
+    font-family: nusx;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+#fizpirbox #subm {
+
+    width: 45%;
+    border-radius: 10px;
+    font-family: nusx;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-sizing: border-box;
+    color: white;
+
+    font-size: 20px;
+    background: linear-gradient(to bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -webkit-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -moz-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -o-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -ms-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+}
+
+/* Right Side Registration styles start */
+
+#iuridiuliPiri #iurpiri {
+    width: 100%;
+    height: 79%;
+    background: #f6f6f6;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+    perspective: 500;
+    transition: all .4s;
+    overflow-y: auto;
+    transform: rotateX(90deg);
+}
+
+#iuridiuliPiri #iurpiri input {
+    width: 40%;
+    display: table;
+    padding: 13px 0 13px 20px;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    border: solid 1px #1eb2d5;
+    outline: none;
+    color: #1eb2d5;
+    font-weight: 900;
+    transition: all .4s;
+}
+#iuridiuliPiri input::placeholder {
+    color: #1eb2d5;
+    font-family: nusx;
+    font-weight: 900;
+    font-size: 17px;
+}
+
+.secopen #iurpiri {
+    
+    transform: rotate(0deg) !important;
+  
+} 
+
+.secopen h2 {position: absolute;z-index: 1;transform: rotate(90deg);right: 0;display: flex;top: 22%;}
+
+.secopen #close2 {display: block !important;}
+
+/* Right Side Registration Styles End */
+
+
+
+#iurpiri::-webkit-scrollbar {
+    height: 3px;
+    background: rgba(211, 211, 211, 0.84);
+}
+
+#iurpiri::-o-scrollbar {
+    height: 3px;
+    background:rgba(211, 211, 211, 0.84);
+}
+#iurpiri::-ms-scrollbar {
+    height: 3px;
+    background: rgba(211, 211, 211, 0.84);
+}
+
+#iurpiri::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+#iurpiri::-o-scrollbar-track {
+    background: transparent;
+}
+
+#iurpiri::-ms-scrollbar-track {
+    background: transparent;
+}
+
+
+#iurpiri::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    background: #1eb2d5;
+    cursor: pointer;
+
+}
+
+#iurpiri::-o-scrollbar-thumb {
+    border-radius: 4px;
+    background: #1eb2d5;
+    cursor: pointer;
+
+}
+
+#iurpiri::-ms-scrollbar-thumb {
+    border-radius: 4px;
+    background: #1eb2d5;
+    cursor: pointer;
+
+}
+#iurpiri::-webkit-scrollbar-thumb:hover {
+    background: #008b8b;
+}#iurpiri::-o-scrollbar-thumb:hover {
+    background: #008b8b;
+}#iurpiri::-ms-scrollbar-thumb:hover {
+    background: #008b8b;
+}
+
+
+#iurpiri select {
+    width: 44.5%;
+    padding: 13px 0 13px 20px;
+    border: solid 1px #1eb2d5;
+    outline: none;
+    border-radius: 10px;
+    font-family: nusx;
+    font-size: 20px;
+}
+
+
+#iurpiri #subm2 {
+
+    width: 45% !important;
+    border-radius: 10px;
+    font-family: nusx;
+    border: none;
+    outline: none;
+    margin-bottom: 20px;
+    cursor: pointer;
+    font-weight: 900;
+    box-sizing: border-box;
+    color: white !important;
+    font-size: 20px;
+    background: linear-gradient(to bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -webkit-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -moz-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -o-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+    background: -ms-linear-gradient(bottom, #1eb2d5, #4267b2, #1eb2d5);
+}

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="javascript/burger.js"></script>
+</head>
+
+
+<body>
+    <header class="mainHeader">
+
+
+        <!-- Header boxes-->
+        <a href="#" class="logo"><img src="img/logo.png" alt="logo"></a>
+        <p class="los">ჩვენი საიტი, თქვენი <strong>ეკონომია</strong></p>
+
+        <!-- Search bar and i -->
+        <form action="index.php" class="Search">
+
+            <input type="search" class="searchbg" placeholder="ძებნა...">
+            <button type="submit" class="ser">
+                <i class="fas fa-search"></i></button>
+
+        </form>
+        <!-- Navigation Bar -->
+        <nav>
+            <ul class="headerMenu">
+
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-home"></i> მთავარი</a></li>
+
+
+                <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-handshake"></i> აქციები</a></li>
+
+
+                <li class="nav-item"> <a href="pages/reg.html" class="nav-link"><i class="fas fa-user-circle"></i> პროფილი </a></li>
+
+            </ul>
+        </nav>
+    </header>
+    <section class="head">
+       <h2 style="display: none">astala</h2>
+        <div class="burgerMenu" onclick="openMenu()" id="burgerMenu">
+        <div class="bar1"></div>
+        <div class="bar2"></div>
+        <div class="bar3"></div>
+    </div>
+     
+     <i class="fas fa-arrow-left" id="undo" onclick="clearUndo()"></i>
+     
+      <form action="index.php" class="Search2">
+
+           
+            <input type="search" class="searchbg2" placeholder="ძებნა...">
+            <button type="submit" class="ser">
+                <i class="fas fa-search"></i></button>
+
+        </form>
+
+    </section>
+    <!-- Slider start -->
+    <div id="slider">
+
+        <figure class="slider"><img src="img/sliderImages/bech2.jpg" alt=""></figure>
+    </div>
+
+    <!-- Meore Navbar Meniu, Kategoriebis -->
+
+    <nav class="secNav">
+
+        <i class="fas fa-angle-double-left arrowsIcons"></i>
+        <!--           <img src="img/arrows/arrowLeft.png" alt="">-->
+        <ul class="navbar" id="forBurg">
+            <li class="nav-item" onclick="showUndo()"><a class="nav-link" href="#"><i class="fas fa-power-off"></i> ტექნიკა</a>
+                <ul class="subs">
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-desktop"></i> ტელევიზორები</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-video"></i> ციფრული ტექნიკა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-gamepad"></i> კომპიუტერული ტექნიკა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-tablet-alt"></i> ტელეფონი-ტაბლეტი</a></li>
+
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-blender"></i> წვრილი ტექნიკა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-door-closed"></i> მსხვილი ტექნიკა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-house-damage"></i> ჩასაშენებელი ტექნიკა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-balance-scale"></i> საყოფ. ტექნიკა</a></li>
+
+                </ul>
+
+            </li>
+            <li class="nav-item" onclick="showUndo()"><a class="nav-link" href="#"><i class="fas fa-couch"></i> ავეჯი</a>
+            
+                            <ul class="subs furniture">
+                    <li class="nav-item"><a href="" class="nav-link"> <i class="fas fa-couch"></i> რბილი ავეჯი</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-chair"></i> სკამი</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-ring"></i> მაგიდა</a></li>
+
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-x-ray"></i>კარადა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-bed"></i> საძინებელის ავეჯი</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">მისაღების ავეჯი</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">კაბინეტის ავეჯი</a></li>
+
+                </ul>
+            
+            </li>
+            
+            
+            <li class="nav-item"><a class="nav-link" href="pages/shopping.html"><i class="fas fa-shopping-bag"></i> შოპინგი</a></li>
+            
+            
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-child"></i> საბავშვო</a></li>
+            
+            
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-heartbeat"></i> ფარმაცია</a></li>
+            
+            <li class="nav-item"  onclick="showUndo()"><a class="nav-link" href="#"><i class="fas fa-running"></i> სპორტი</a>
+             <ul class="subs sport">
+                   <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-running"></i> აერობიკა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"> <i class="fas fa-swimmer"></i> ცურვა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-dumbbell"></i> სავარჯიშო დარბაზი</a></li>
+                    
+
+<!--
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-skating"></i>კარადა</a></li>
+                    <li class="nav-item"><a href="" class="nav-link"><i class="fas fa-bed"></i> საძინებელის ავეჯი</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">მისაღების ავეჯი</a></li>
+                    <li class="nav-item"><a href="" class="nav-link">კაბინეტის ავეჯი</a></li>
+-->
+
+                </ul>
+            </li>
+            
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-shopping-cart"></i> საყოფაცხოვრებო</a></li>
+            
+            <li class="nav-item"><a class="nav-link" href="#"><i class="fas fa-briefcase"></i> კომპანია</a></li>
+
+
+
+        </ul>
+        <i class="fas fa-angle-double-right arrowsIcons"></i>
+    </nav>
+
+    <hr class="popular_up">
+
+
+    <!-- dayoff -->
+    <h1>დღის აქციები</h1>
+
+    <hr class="popular_down">
+
+
+    <!-- kategoriis Asarchevi seqcia -->
+   
+    <section class="firstSection">
+<h2 style="display: none;">astala</h2>
+        <aside class="doubleSlider">
+
+            <select class="category">
+
+                <option value="tech" selected>ტექნიკა</option>
+                <option value="furniture"> ავეჯი</option>
+                <option value="shopping">შოპინგი </option>
+                <option value="pharmacy">ფარმაცია</option>
+                <option value="super">სუპერმარკეტი</option>
+                <option value="household">საყოფაცხოვრებო</option>
+                <option value="company">კომპანიები</option>
+            </select>
+
+            <form class="arrows">
+                <button class="leftGo" onclick="goLeft()"><img src="img/arrows/arrowLeft.png" alt=""></button>
+                <button class="rightGo" onclick="goRight()"><img src="img/arrows/arrowRight.png" alt=""></button>
+            </form>
+
+
+        </aside>
+
+        <!-- Aqciiis artiklebi -->
+        <section class="sectionFooter">
+<h2 style="display: none;">astala</h2>
+            <article>
+                <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+
+                <img src="img/newsImages/box_back.jpg" alt="">
+                <h2 class="title"><a href="#">მაღაზიის სახელი</a></h2>
+                <hgroup class="hName">
+                    <h5>სახელი:</h5>
+                    <h2><a class="productName" href="pages/product.html">Pro Name</a></h2>
+
+                </hgroup>
+
+                <section class="hPrices">
+
+                    <h5 class="price">ფასი:</h5>
+                    <h5 class="oldPrice">100</h5>
+                    <p class="emoji"><i class="fas fa-arrow-right"></i></p>
+                    <h5 class="newPrice">50</h5>
+                </section>
+ <hr class="style-two">
+                <div class="time"><i class="far fa-clock"></i>
+                    <p class="timeLeft"> 7დღე 20:17:43</p>
+                </div>
+
+                <figure class="socials">
+
+                    <a href="#" class="fb"><i class="fab fa-facebook-f" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share On Facebook"></i></a>
+                   
+                    <a href="#"><i class="fas fa-star" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Subscribe"></i></a>
+
+                </figure>
+
+            </article>
+            <article>
+                <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+
+                <img src="img/newsImages/box_back.jpg" alt="">
+                <h2 class="title"><a href="#">მაღაზიის სახელი</a></h2>
+                <hgroup class="hName">
+                    <h5>სახელი:</h5>
+                    <h2><a class="productName" href="pages/product.html">Pro Name</a></h2>
+
+                </hgroup>
+
+                <section class="hPrices">
+
+                    <h5 class="price">ფასი:</h5>
+                    <h5 class="oldPrice">100</h5>
+                    <p class="emoji"><i class="fas fa-arrow-right"></i></p>
+                    <h5 class="newPrice">50</h5>
+                </section>
+ <hr class="style-two">
+                <div class="time"><i class="far fa-clock"></i>
+                    <p class="timeLeft"> 7დღე 20:17:43</p>
+                </div>
+
+                <figure class="socials">
+
+                    <a href="#" class="fb"><i class="fab fa-facebook-f" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share On Facebook"></i></a>
+                   
+                    <a href="#"><i class="fas fa-star" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Subscribe"></i></a>
+
+                </figure>
+
+            </article> <article>
+                <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+
+                <img src="img/newsImages/box_back.jpg" alt="">
+                <h2 class="title"><a href="#">მაღაზიის სახელი</a></h2>
+                <hgroup class="hName">
+                    <h5>სახელი:</h5>
+                    <h2><a class="productName" href="pages/product.html">Pro Name</a></h2>
+
+                </hgroup>
+
+                <section class="hPrices">
+
+                    <h5 class="price">ფასი:</h5>
+                    <h5 class="oldPrice">100</h5>
+                    <p class="emoji"><i class="fas fa-arrow-right"></i></p>
+                    <h5 class="newPrice">50</h5>
+                </section>
+  <hr class="style-two">
+                <div class="time"><i class="far fa-clock"></i>
+                    <p class="timeLeft"> 7დღე 20:17:43</p>
+                </div>
+
+                <figure class="socials">
+
+                    <a href="#" class="fb"><i class="fab fa-facebook-f" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share On Facebook"></i></a>
+                   
+                    <a href="#"><i class="fas fa-star" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Subscribe"></i></a>
+
+                </figure>
+
+            </article> <article>
+                <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+
+                <img src="img/newsImages/box_back.jpg" alt="">
+                <h2 class="title"><a href="#">მაღაზიის სახელი</a></h2>
+                <hgroup class="hName">
+                    <h5>სახელი:</h5>
+                    <h2><a class="productName" href="pages/product.html">Pro Name</a></h2>
+
+                </hgroup>
+
+                <section class="hPrices">
+
+                    <h5 class="price">ფასი:</h5>
+                    <h5 class="oldPrice">100</h5>
+                    <p class="emoji"><i class="fas fa-arrow-right"></i></p>
+                    <h5 class="newPrice">50</h5>
+                </section>
+  <hr class="style-two">
+                <div class="time"><i class="far fa-clock"></i>
+                    <p class="timeLeft"> 7დღე 20:17:43</p>
+                </div>
+
+                <figure class="socials">
+
+                    <a href="#" class="fb"><i class="fab fa-facebook-f" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share On Facebook"></i></a>
+                   
+                    <a href="#"><i class="fas fa-star" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Subscribe"></i></a>
+
+                </figure>
+
+            </article>
+        </section>
+
+    </section>
+
+    <hr class="popular_up">
+
+    <h1>მიმდინარე აქციები</h1>
+
+    <hr class="popular_down">
+
+
+
+    <section class="firstSection">
+<h2 style="display: none;">astala</h2>
+        <aside class="doubleSlider">
+
+            <select class="category">
+
+                <option value="tech" selected>ტექნიკა</option>
+                <option value="furniture"> ავეჯი</option>
+                <option value="shopping">შოპინგი </option>
+                <option value="pharmacy">ფარმაცია</option>
+                <option value="super">სუპერმარკეტი</option>
+                <option value="household">საყოფაცხოვრებო</option>
+                <option value="company">კომპანიები</option>
+            </select>
+
+            <form class="arrows">
+                <button class="leftGo" onclick="goLeft()"><img src="img/arrows/arrowLeft.png" alt=""></button>
+                <button class="rightGo" onclick="goRight()"><img src="img/arrows/arrowRight.png" alt=""></button>
+            </form>
+
+
+        </aside>
+
+
+        <section class="sectionFooter">
+ <h2 style="display: none">astala</h2>
+           <article>
+                <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+
+                <img src="img/newsImages/box_back.jpg" alt="">
+                <h2 class="title"><a href="#">მაღაზიის სახელი</a></h2>
+                <hgroup class="hName">
+                    <h5>სახელი:</h5>
+                    <h2><a class="productName" href="pages/product.html">Pro Name</a></h2>
+
+                </hgroup>
+
+                <section class="hPrices">
+
+                    <h5 class="price">ფასი:</h5>
+                    <h5 class="oldPrice">100</h5>
+                    <p class="emoji"><i class="fas fa-arrow-right"></i></p>
+                    <h5 class="newPrice">50</h5>
+                </section>
+  <hr class="style-two">
+                <div class="time"><i class="far fa-clock"></i>
+                    <p class="timeLeft"> 7დღე 20:17:43</p>
+                </div>
+
+                <figure class="socials">
+
+                    <a href="#" class="fb"><i class="fab fa-facebook-f" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share On Facebook"></i></a>
+                   
+                    <a href="#"><i class="fas fa-star" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Subscribe"></i></a>
+
+                </figure>
+
+            </article> <article>
+                <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+
+                <img src="img/newsImages/box_back.jpg" alt="">
+                <h2 class="title"><a href="#">მაღაზიის სახელი</a></h2>
+                <hgroup class="hName">
+                    <h5>სახელი:</h5>
+                    <h2><a class="productName" href="pages/product.html">Pro Name</a></h2>
+
+                </hgroup>
+
+                <section class="hPrices">
+
+                    <h5 class="price">ფასი:</h5>
+                    <h5 class="oldPrice">100</h5>
+                    <p class="emoji"><i class="fas fa-arrow-right"></i></p>
+                    <h5 class="newPrice">50</h5>
+                </section>
+  <hr class="style-two">
+                <div class="time"><i class="far fa-clock"></i>
+                    <p class="timeLeft"> 7დღე 20:17:43</p>
+                </div>
+
+                <figure class="socials">
+
+                    <a href="#" class="fb"><i class="fab fa-facebook-f" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share On Facebook"></i></a>
+                   
+                    <a href="#"><i class="fas fa-star" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Subscribe"></i></a>
+
+                </figure>
+
+            </article> <article>
+                <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+
+                <img src="img/newsImages/box_back.jpg" alt="">
+                <h2 class="title"><a href="#">მაღაზიის სახელი</a></h2>
+                <hgroup class="hName">
+                    <h5>სახელი:</h5>
+                    <h2><a class="productName" href="pages/product.html">Pro Name</a></h2>
+
+                </hgroup>
+
+                <section class="hPrices">
+
+                    <h5 class="price">ფასი:</h5>
+                    <h5 class="oldPrice">100</h5>
+                    <p class="emoji"><i class="fas fa-arrow-right"></i></p>
+                    <h5 class="newPrice">50</h5>
+                </section>
+                
+  <hr class="style-two">
+
+                <div class="time"><i class="far fa-clock"></i>
+                    <p class="timeLeft"> 7დღე 20:17:43</p>
+                </div>
+
+                <figure class="socials">
+
+                    <a href="#" class="fb"><i class="fab fa-facebook-f" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Share On Facebook"></i></a>
+                   
+                    <a href="#"><i class="fas fa-star" title="" data-toggle="tooltip" data-placement="bottom" data-original-title="Subscribe"></i></a>
+
+                </figure>
+
+            </article> <article>
+                <i class="fas fa-heart fa-3x" data-toggle="tooltip" data-placement="right" title="" data-original-title="შენახვა"></i>
+
+                <img src="img/newsImages/box_back.jpg" alt="">
+                <h2 class="title"><a href="#">მაღაზიის სახელი</a></h2>
+                <hgroup class="hName">
+                    <h5>სახელი:</h5>
+                    <h2><a class="productName" href="pages/product.html">Pro Name</a></h2>
+
+                </hgroup>
+
+                <section class="hPrices">
+
+                    <h5 class="price">ფასი:</h5>
+                    <h5 class="oldPrice">100</h5>
+                    <p class="emoji"><i class="fas fa-arrow-right"></i></p>
+                    <h5 class="newPrice">50</h5>
+                </section>
+   <hr class="style-two">
+                <div class="time"><i class="far fa-clock"></i>
+                    <p class="timeLeft"> 7დღე 20:17:43</p>
+                </div>
+
+                <figure class="socials">
+
+                    <a href="#" class="fb"><i class="fab fa-facebook-f" title="Share On Facebook"></i></a>
+                   
+                    <a href="#"><i class="fas fa-star" title="Subscribe"></i></a>
+
+                </figure>
+
+            </article>
+        </section>
+
+    </section>
+
+
+
+
+
+
+</body>
+
+</html>

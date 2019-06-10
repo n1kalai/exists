@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body style="background: grey;">
+                       
+<style>
+  form #form {
+    padding-left: 0px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 0px;
+}  form #form li {
+    list-style: none;
+    padding: 5px;
+    position: relative;
+
+}
+
+
+
+/*
+main #leftMenu #form li:after {
+    content: '';
+    width: 11px;
+    height: 11px;
+    border: groove 5px white;
+    border-radius: 10%;
+    position: absolute;
+    left: 2.5%;
+    
+    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    -moz-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    -o-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    -ms-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
+    
+
+    
+}
+*/
+  li a {
+    text-decoration: none;
+
+}
+
+  li label a {
+    cursor: pointer;
+}
+
+/* LeftMenu Button */  #filter {
+    /*button*/
+    padding: 2px 10px 5px 10px;
+    font-weight: 600;
+    color: white;
+    letter-spacing: 2px;
+    cursor: pointer;
+    font-family: italy;
+    margin-left: calc(50% - 67px);
+    margin-top: 2%;
+    border: groove 2px white;
+    border-radius: 3px;
+    font-size: 20px;
+    position: relative;
+    background-image: linear-gradient(to bottom, #1eb2d5,
+        #20798e);
+    background-image: linear-gradient(to bottom, #1eb2d5,
+        #20798e);
+    background-image: -webkit-linear-gradient(to bottom, #1eb2d5,
+        #20798e);
+    background-image: -moz-linear-gradient(to bottom, #1eb2d5,
+        #20798e);
+    background-image: -ms-linear-gradient(to bottom, #1eb2d5,
+        #20798e);
+
+    background-image: -o-linear-gradient(to bottom, #1eb2d5,
+        #20798e);
+  overflow: hidden;
+  
+
+
+}
+    
+    #filter::after{
+        content: "";
+        position: absolute;
+        width: 50px;
+        height: 100%;
+        transform: skewX(-45deg);
+        background-color: rgba(255, 255, 255, 0.63);
+        opacity: 1;
+        bottom: 0;
+        left: -46%;
+
+        transition:all .5s;
+   
+    }
+
+    
+    #filter:hover::after{
+        animation: hover .4s ease;
+      
+    }
+    
+    @keyframes hover {
+        0% {left: -46%;}
+        99% {left: 115%;}
+        120% {left: 125%;top: -150%;}
+    }
+</style>
+                  
+
+                  <form action="" method="">
+                   <ul id="form">
+      <li class="nav-item"><label for="hm"><input type="checkbox" name="hm" id="hm"> <a class="nav-link">H&M </a></label></li>
+      <li class="nav-item"><label for="flo"><input type="checkbox" name="FLO" id="flo"><a class="nav-link"> FLO</a></label></li>
+      <li class="nav-item"><label for="kotton"><input type="checkbox" name="KOTTON" id="kotton"><a class="nav-link" > KOTTON</a></label></li>
+      <li class="nav-item"><label for="waikiki"><input type="checkbox" name="WAIKIKI" id="waikiki"><a class="nav-link"> WAIKIKI</a></label></li>
+      <li class="nav-item"><label for="adidas"><input type="checkbox" name="ADIDAS" id="adidas"><a class="nav-link"> ADIDAS</a></label></li>
+      <li class="nav-item"><label for="nike"><input type="checkbox" name="NIKE" id="nike"><a class="nav-link"> NIKE</a></label></li>
+      <li class="nav-item"><label for="gloria"><input type="checkbox" name="GLORIA" id="gloria"><a class="nav-link" > GLORIA</a></label></li>
+
+      
+      </ul>
+                  <button id="filter" type="submit">გაფილტვრა</button>
+                   </form>
+    </body>
+</html>

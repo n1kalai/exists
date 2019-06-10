@@ -1,0 +1,318 @@
+
+ article {
+    width: 30%;
+    border: solid 1px darkcyan;
+    box-sizing: border-box;
+    margin: 0 auto;
+    border-radius: 10px;
+    background: #FFF;
+    position: relative;
+     margin-bottom: 3%;
+    }
+
+ article img {
+    width: 91%;
+    height: 100%;
+    margin: 4.7% 0 0 4.7%;
+    border-radius: 10px 10px 0 0;
+
+
+}
+
+/* Like Button */
+
+ article .fa-heart {
+    transition: 0.5s;
+    font-weight: 400;
+    position: absolute;
+    background: #10e5ac;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    margin-top: 29%;
+    margin-left: 41.5%;
+    opacity: 0;
+
+}
+
+ article:hover .fa-heart {
+    opacity: 1;
+
+
+}
+
+ article:hover .fa-heart:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+ article:hover {
+
+    box-shadow: 0 0 5px black;
+
+}
+
+/* Like Button End */
+
+ article .title {
+    width: 91%;
+    text-align: center;
+    background: #1eb2d5;
+    margin-left: 4.7%;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: mtav;
+    font-size: 20px;
+    border-radius: 0 0 6px 6px;
+    box-sizing: border-box;
+}
+
+ article .title a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Everything About Prices Styles Start */
+
+ article .hName {
+    width: 91%;
+    margin-left: 4.7%;
+    margin-top: 7%;
+    display: flex;
+    flex-direction: row;
+
+
+}
+
+ article .hName h5 {
+    font-size: 18px;
+    margin-top: 0;
+}
+
+ article .hName h2 {
+    font-size: 20px;
+    margin-left: 5px;
+    line-height: 30px;
+    margin-top: -2%;
+}
+
+ article .hName .productName {
+    width: 72%;
+    text-align: center;
+    font-variant: small-caps;
+}
+
+#leftOfRight article .hName .productName {
+    width: 72%;
+    font-variant: small-caps;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none;
+    color: black;
+    position: relative;
+    transition: color .4s;
+    text-align: left;
+    margin-left: 1%;
+}
+
+#leftOfRight article .hName .productName::after {
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 5px;;
+    top: 40%;
+    left: 1%;
+    background: #1eb2d5;
+    background: red;
+    transition: width .4s, background .3s;
+}
+
+#leftOfRight article .hName .productName:hover::after {
+    
+    width: 60px;
+    background: #1eb2d5;
+    
+}
+
+/* Everything About Prices Styles Start */
+
+ article .hPrices  {
+    width: 91%;
+    margin-left: 4.7%;
+    display: flex;
+    border-bottom: solid 1px darkcyan;
+    height: 50px;
+    
+}
+
+ article .hPrices .changedPrice {
+    font-size: 20px;
+}
+
+ article .hPrices h5 {
+    
+    font-size: 20px;
+    width: 27%;
+    text-align: center;
+    margin-top: 0;
+}
+
+ article .hPrices h6  {
+    
+    width: 10%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 0;
+    
+}
+
+ article .hPrices #price {
+    width: 27%;
+    text-align: left;
+    line-height: 20px;
+}
+
+ article .oldPrice {
+    width: 27%;
+    text-decoration: line-through;
+    color: red;
+}
+
+ article .emoji {
+    width: 10%;
+}
+
+ article .emoji .fa-arrow-right {
+    background: linear-gradient(to right, red, #10e5ac);
+    background: -webkit-linear-gradient(to right, red, #10e5ac);
+    background: -ms-linear-gradient(to right, red, #10e5ac);
+    background: -o-linear-gradient(to right, red, #10e5ac);
+    background: -moz-linear-gradient(to right, red, #10e5ac);
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+}
+
+ article .newPrice {
+    width: 27%;
+    text-align: right;
+    color: #10e5ac;
+}
+
+/* Everything About Prices Styles End */
+
+/* Timing Functions Styles Start */
+
+ article .time {
+    width: 97%;
+    margin-left: 1.7%;
+    font-weight: 700;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+}
+
+ article .time .far {
+    font-size: 20px;
+    margin-top: 15px;
+    color: darkcyan;
+}
+
+ article .time .timeLeft {
+    margin: 13px 0 0 5px;
+    font-size: 18px;
+    font-family: mtav;
+    color: darkcyan;
+}
+
+
+/* Timing Functions Styles End */
+
+
+/* Socials Start*/
+
+ article .socials {
+    position: relative;
+    bottom: -30px;
+    width: 97%;
+    margin-left: 1.7%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -15px;
+}
+
+ article .socials a {
+    color: grey;
+    background: #FFF;
+    border: solid 4px #10aae5;
+    border-radius: 20px;
+    background-color: ;
+}
+
+
+ article .socials .fa-twitter {
+    transition: 1s;
+    padding: 2px 5px;
+}
+
+ article .socials .fa-twitter:hover {
+    color: #6ecedb;
+    transform: rotateX(360deg);
+}
+
+ article .socials .fa-facebook-f {
+    transition: 1s;
+    padding: 2px 9px;
+}
+
+ article .socials .fa-facebook-f:hover {
+    color: #0000e6;
+    transform: rotateX(360deg);
+
+}
+
+ article .socials .fa-pinterest-p {
+    transition: 1s;
+    padding: 2px 6px;
+}
+
+ article .socials .fa-pinterest-p:hover {
+    color: red;
+    transform: rotateX(360deg);
+}
+
+ article .socials .fa-instagram {
+    transition: 1s;
+    padding: 2px 6px;
+}
+
+ article .socials .fa-instagram:hover {
+    color: #e600e6;
+    transform: rotateX(360deg);
+}
+
+ article .socials .fa-star {
+    transition: 1s;
+    padding: 2px 4px;
+}
+
+ article .socials .fa-star:hover {
+    color: #ffe033;
+    transform: rotateX(360deg);
+}

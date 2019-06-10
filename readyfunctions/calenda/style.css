@@ -1,0 +1,262 @@
+@font-face {font-family:mtav; src: url(fonts/mtavruli.ttf)}
+#firstSection {width: 25%;float: left; display: inline-block;margin-top: -8%;}
+#forms {width: 50%;margin-left: 40%; margin-top: 5%;}
+#forms input {padding: 10px;}
+#forms select {padding: 5px 65px;}
+#forms input[type="date"] {padding: 10px 25px;}
+#firstSection article {
+    width: 100%;
+    border: solid 1px darkcyan;
+    box-sizing: border-box;
+    margin: 0 auto;
+    float: left;
+    margin-left: 3.3%;
+    border-radius: 10px;
+    background: #FFF;
+    position: relative;
+    margin-top: 50px;
+
+}
+
+#firstSection article img {
+    width: 91%;
+    height: 100%;
+    margin: 4.7% 0 0 4.7%;
+    border-radius: 10px 10px 0 0;
+
+
+}
+
+/* Like Button */
+
+#firstSection article .fa-heart {
+    transition: 0.5s;
+    font-weight: 400;
+    position: absolute;
+    background: #10e5ac;
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+    margin-top: 29%;
+    margin-left: 41.5%;
+    opacity: 0;
+
+}
+
+#firstSection article:hover .fa-heart {
+    opacity: 1;
+
+
+}
+
+#firstSection article:hover .fa-heart:hover {
+    transform: scale(1.1);
+    font-weight: 600;
+    cursor: pointer;
+
+}
+
+#firstSection article:hover {
+
+    box-shadow: 0 0 5px black;
+
+}
+
+/* Like Button End */
+
+#firstSection article #title {
+    width: 91%;
+    text-align: center;
+    background: #1eb2d5;
+    margin-left: 4.7%;
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: mtav;
+    font-size: 20px;
+    border-radius: 0 0 6px 6px;
+    box-sizing: border-box;
+}
+
+#firstSection article #title a {
+    text-decoration: none;
+    color: black;
+}
+
+/* Everything About Prices Styles Start */
+
+#firstSection article #hName {
+    width: 91%;
+    margin-left: 4.7%;
+    margin-top: 7%;
+
+}
+
+#firstSection article #hName h3 {
+    width: 28%;
+    float: left;
+    margin: 0;
+}
+
+#firstSection article #hName #productName {
+    width: 72%;
+    text-align: center;
+}
+
+/* Everything About Prices Styles Start */
+
+#firstSection article #hPrices {
+    width: 91%;
+    margin-left: 4.7%;
+    display: flex;
+    border-bottom: solid 1px darkcyan;
+    ;
+}
+
+#firstSection article #price {
+    width: 27%;
+}
+
+#firstSection article #oldPrice {
+    width: 27%;
+    text-decoration: line-through;
+    color: red;
+}
+
+#firstSection article #emoji {
+    width: 10%;
+}
+
+#firstSection article #emoji .fas {
+    background: linear-gradient(to right, red, #10e5ac);
+    background: -webkit-linear-gradient(to right, red, #10e5ac);
+    background: -ms-linear-gradient(to right, red, #10e5ac);
+    background: -o-linear-gradient(to right, red, #10e5ac);
+    background: -moz-linear-gradient(to right, red, #10e5ac);
+    text-fill-color: transparent;
+    -webkit-text-fill-color: transparent;
+    -ms-text-fill-color: transparent;
+    -o-text-fill-color: transparent;
+    -moz-text-fill-color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -ms-background-clip: text;
+    -o-background-clip: text;
+    -moz-background-clip: text;
+}
+
+#firstSection article #newPrice {
+    width: 27%;
+    text-align: right;
+    color: #10e5ac;
+}
+
+/* Everything About Prices Styles End */
+
+/* Timing Functions Styles Start */
+
+#firstSection article .time {
+    width: 97%;
+    margin-left: 1.7%;
+    font-weight: 700;
+    display: flex;
+    margin-top: 5px;
+    justify-content: center;
+    
+}
+
+#firstSection article .time .far {
+    font-size: 20px;
+    margin-top: 15px;
+    color: darkcyan;
+}
+
+#firstSection article .time #timeLeft {
+    font-family: mtav;
+    margin: 13px 0 0 5px;
+    font-size: 18px;
+    font-family: mtav;
+    color: darkcyan;
+}
+
+
+/* Timing Functions Styles End */
+
+
+/* Socials Start*/
+
+#firstSection article #socials {
+    position: relative;
+    bottom: -30px;
+    width: 97%;
+    margin-left: 1.7%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: -15px;
+}
+
+#firstSection article #socials a {
+    color: grey;
+    background: #FFF;
+    border: solid 4px #10aae5;
+    border-radius: 20px;
+    background-color: ;
+}
+
+
+#firstSection article #socials .fa-twitter {
+    transition: 1s;
+    padding: 2px 5px;
+}
+
+#firstSection article #socials .fa-twitter:hover {
+    color: #6ecedb;
+    transform: rotateX(360deg);
+}
+
+#firstSection article #socials .fa-facebook-f {
+    transition: 1s;
+    padding: 2px 9px;
+}
+
+#firstSection article #socials .fa-facebook-f:hover {
+    color: #0000e6;
+    transform: rotateX(360deg);
+
+}
+
+#firstSection article #socials .fa-pinterest-p {
+    transition: 1s;
+    padding: 2px 6px;
+}
+
+#firstSection article #socials .fa-pinterest-p:hover {
+    color: red;
+    transform: rotateX(360deg);
+}
+
+#firstSection article #socials .fa-instagram {
+    transition: 1s;
+    padding: 2px 6px;
+}
+
+#firstSection article #socials .fa-instagram:hover {
+    color: #e600e6;
+    transform: rotateX(360deg);
+}
+
+#firstSection article #socials .fa-star {
+    transition: 1s;
+    padding: 2px 4px;
+}
+
+#firstSection article #socials .fa-star:hover {
+    color: #ffe033;
+    transform: rotateX(360deg);
+}

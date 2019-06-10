@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ka">
+<head>
+    <meta charset="UTF-8">
+    <title>რეგისტრაცია</title>
+    <link rel="stylesheet" href="../styles/reg.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <script src="../javascript/eye.js"></script>
+   </head>
+
+<body>
+            <header id="mainHeader">
+            <a href="#" class="logo"><img src="../img/logo.png" alt="logo"></a>
+            <p id="los"><u>ჩვენი საიტი, თქვენი <strong>ეკონომია</strong></u></p>
+
+            <nav>
+                <ul id="headerMenu">
+                    
+                        <li class="nav-item"><a href="../index.html" class="nav-link"><i class="fas fa-home"></i> მთავარი</a></li>
+                    
+                    
+                        <li class="nav-item"><a href="#" class="nav-link"><i class="fas fa-handshake"></i> აქციები</a></li>
+                    
+                   
+                        <li class="nav-item"> <a href="#" class="nav-link"><i class="fas fa-user-circle"></i> პროფილი </a></li>
+                   
+                </ul>
+            </nav>
+        </header>
+
+    <section id="regMain">
+        <article id="logIn">
+            <header>
+                <h2 id="logH">შესვლა</h2>
+            </header>
+            <form action="" id="lForm">
+            <input type="text" placeholder="niki" class="letter" required>
+            <input type="password" placeholder="paroli" required id="eye">
+            <article id="eyeRec"><i class="far fa-eye"  onclick="show()" id="show2" title="პაროლის ჩვენება"></i> <a href="#"><p id="recover">პაროლის აღდგენა</p></a></article>
+            <button id="logedIn">Log In</button>
+            <button id="fb">FB</button>
+            </form>
+            
+        </article>
+        <article id="reg">
+         <header>
+                <h2 id="regH">რეგისტრაცია</h2>
+            </header>
+        
+        <article id="fizikuriPiri"><h2 onclick="fizpir()">fizikuri piri<span id="close" style="display: none; font-family: arial;margin-left: 10px;color: darkred;">(X)</span></h2>
+        
+        <form action="" method="" id="fizpirbox">
+            
+            <input type="text" placeholder="niki">
+            <input type="password" placeholder="paroli">
+            <input type="email" placeholder="e-fosta">
+            <input type="submit" value="registracia" id="subm">
+        </form>
+        
+        </article>
+        
+        <article id="iuridiuliPiri"><h2 onclick="iurpir()"><span id="close2" style="display: none; font-family: arial;margin-right: 10px; color: darkred;">(X)</span>iuridiuli piri </h2>
+        <form action="" method="post" id="iurpiri">
+            <input type="text" placeholder="niki">
+            <input type="password" placeholder="paroli">
+            <input type="password" placeholder="gaimeoreT paroli">
+            <input type="text" placeholder="kompaniis saxeli">
+            <input type="email" placeholder="kompaniis e-fosta">
+                       
+            <input type="text" placeholder="kompaniis nomeri">
+            <p>აირჩიეთ კატეგორია</p>
+            <select name="" id="category">
+            <option value=""></option>
+            <option value="techtnic">teqnika</option>
+            <option value="furniture">aveji</option>
+            <option value="shopping">Sopingi</option>
+            <option value="forkids">sabavSvo</option>
+            <option value="health">jamrTeloba</option>
+            <option value="sport">sporti</option>
+            <option value="family">saojaxo</option>
+            <option value="company">kompania</option>
+            </select>
+            <p>იურიდიული ფორმა</p>
+            <select name="" id="buziness" style="margin-bottom: 20px;">
+                <option value=""></option>
+                <option value="shps">Sps</option>
+                <option value="satsarmo">sawarmo</option>
+                <option value="saaqciosazogadoeba">saaqcio sazogadoeba</option>
+            </select><br>
+             <input type="submit" value="registracia" id="subm2">
+        </form>
+        
+        </article>
+
+        </article>
+
+
+    </section>
+
+</body>
+</html>
