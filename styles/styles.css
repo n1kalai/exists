@@ -1567,19 +1567,85 @@ h1::selection {
 
 	.firstSection .doubleSlider .category {
 		order: 2;
-		margin-inline-end: 2px;
+		margin-inline-end: 9px;
 	}
 
 	.firstSection .doubleSlider .arrows {
 		order: 1;
-		margin-inline-end: 16px;
+		margin-inline-end: 7px;
 	}
 	
 	.secNav .navbar li .subs li {
 		width: 45%;
 	}
 }
-
+@media screen and (max-width:376px) {
+	
+	.firstSection article img {
+		height: 49%;
+	}
+	
+	.firstSection article .title {
+		margin-top: 15%;
+		font-size: 14px;
+	}
+	.firstSection article .hName {
+	margin-top: 4px;
+		height: 22px;
+	}
+	
+	.firstSection article .hName h5 {
+		font-size: 14px;
+	}
+	
+	.firstSection article .hName h2 {
+		margin-top: -3%;
+	}
+	.firstSection article .hName .productName {
+		font-size: 15px;
+			}
+	.firstSection article .hPrices {
+		height: 28px;;
+	}
+	.firstSection article .hPrices h5 {
+		font-size: 14px;
+	}
+	
+	.firstSection article .time .timeLeft {
+		font-size: 13px;
+	}
+/*	HR*/
+	.style-two {
+		margin-bottom: 0;
+	}
+	
+	.firstSection article .socials {
+		margin-top: -7.5%;
+	}
+	
+	.firstSection article .socials a {
+		line-height: 0;
+		height: auto;
+		padding-top: 3px;
+		margin-bottom: 7px;
+	}
+	
+	.firstSection article .time .far {
+		margin-top: 3px;
+	}
+	
+	.popular_up {
+    margin-bottom: 25px;
+	}
+	
+	.mimAq {
+		font-size: 33px;
+	}
+	
+	.firstSection .doubleSlider {
+		right: 4.7%;
+	}
+}
 
 @media screen and (max-width:320px) {
 	.firstSection .doubleSlider .category {
@@ -1594,6 +1660,19 @@ h1::selection {
 	.head .fa-arrow-left {
 
 		left: calc(28% - 25px);
+	}
+	
+		.firstSection article img {
+		height: 43%;
+	}
+	
+	.firstSection article .title {
+		margin-top: 17%;
+		font-size: 13px;
+	}
+	
+	.firstSection article .hName .productName {
+		font-size: 12px;
 	}
 
 }
