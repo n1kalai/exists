@@ -114,7 +114,7 @@ header .los {
 	margin-left: 10px;
 	position: relative;
 	color: white;
-	
+
 }
 
 header .los::after {
@@ -144,6 +144,7 @@ header .los::before {
 	background-image: -ms-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
 	background-image: -o-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
 }
+
 u {
 	text-decoration: underline white;
 }
@@ -1112,9 +1113,9 @@ h1::selection {
 	.mainHeader {
 		position: fixed;
 		z-index: 1;
-		bottom: 2px;
 		left: 0;
 		top: 90%;
+		bottom: 0;
 	}
 
 	.mainHeader nav .headerMenu {
@@ -1261,7 +1262,7 @@ h1::selection {
 
 	.secNav .navbar li .subs {
 		margin-left: 0.2%;
-		margin-top: -98px;
+		top: 0;
 		box-shadow: none !important;
 		background: #008b8b;
 		padding: 20px 0;
@@ -1272,10 +1273,11 @@ h1::selection {
 	.secNav .navbar li .subs li {
 		width: 30%;
 		border-bottom: none;
+		margin-left: 13px;
 	}
 
 	.secNav .navbar li .subs li a {
-		font-size: 15px;
+		font-size: 14px;
 		margin-top: 10px;
 		text-decoration: none;
 	}
@@ -1288,7 +1290,7 @@ h1::selection {
 		display: block !important;
 		margin-left: -69.9%;
 		height: 90%;
-		top: 95px;
+		
 
 	}
 
@@ -1411,24 +1413,49 @@ h1::selection {
 	.mainHeader {
 		position: fixed;
 		z-index: 1;
-		bottom: 2px;
 		left: 0;
-		top: 90%;
+		bottom: 0;
+		border-top: solid 1px white;
+
 	}
 
 	.mainHeader nav .headerMenu {
 		width: 100%;
-		line-height: 10px;
 		display: flex;
 		justify-content: space-around;
-		margin-top: 2%;
+		margin-top: 2.5%;
 	}
-
-	.mainHeader nav .headerMenu li a {
+	
+	.mainHeader nav .headerMenu li {
+		margin-top: -10px;
+		line-height: 28px;
+	}
+		.mainHeader nav .headerMenu li a {
 		font-size: 19px;
 		margin-left: 4px;
 		margin-top: 5px;
+		display: flex;
+		flex-direction: column;
+		text-align: center
 	}
+
+	.mainHeader nav .headerMenu li:nth-child(2) {
+		border-top: solid 1px white;
+		border-radius: 100%;
+		height: 90px;
+		margin-top: -30px;
+		background: #1eb2d5;
+		line-height: 23px;
+		
+	}
+
+	.mainHeader nav .headerMenu li:nth-child(2) a i {
+		font-size: 35px;
+		transform: rotate(5deg);
+		margin-top: 5px
+	}
+
+
 
 	.mainHeader .logo {
 		display: none;
@@ -1446,9 +1473,7 @@ h1::selection {
 	/* BURgering Styles Start */
 
 
-	.secNav .navbar li .subs {
-		margin-top: -100px;
-	}
+
 
 	/* BURgering Styles End */
 	.slider {
@@ -1462,8 +1487,14 @@ h1::selection {
 	.firstSection article {
 		width: 47%;
 		margin-left: 2.2%;
+		margin-top: 25%;
 	}
-
+	.firstSection article img {
+		height: 50%;
+		margin-top: -53.5%
+	}
+	
+	
 
 
 }
@@ -1478,7 +1509,7 @@ h1::selection {
 		z-index: 1;
 		bottom: 2px;
 		left: 0;
-		top: 90%;
+		bottom: 0;
 	}
 
 	.mainHeader nav .headerMenu {
@@ -1542,6 +1573,10 @@ h1::selection {
 	.firstSection .doubleSlider .arrows {
 		order: 1;
 		margin-inline-end: 16px;
+	}
+	
+	.secNav .navbar li .subs li {
+		width: 45%;
 	}
 }
 
