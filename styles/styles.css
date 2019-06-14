@@ -1254,6 +1254,7 @@ width: 91%;
 
     .secNav .navbar.open {
         top: 60px;
+        height: 100%;
     }
 
     .secNav .navbar li {
@@ -1276,7 +1277,7 @@ width: 91%;
         top: 0;
         box-shadow: none !important;
         background: #008b8b;
-        height: 82vh;
+        height:  100%;
         align-content: start;
 
     }
@@ -1481,7 +1482,8 @@ width: 91%;
     /* Header Styles End */
     /* BURgering Styles Start */
 
-
+.firstSection .sectionFooter {
+    margin-top: 3%;}
 
 
     /* BURgering Styles End */
