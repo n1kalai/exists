@@ -1246,7 +1246,6 @@ width: 91%;
         flex-direction: row;
         flex-wrap: wrap;
         text-align: center;
-        padding-top: 24px;
         box-sizing: border-box;
         top: -100%;
         transition: all .4s;
