@@ -1122,7 +1122,7 @@ width: 91%;
     /* Header Styles Start */
     .mainHeader {
         position: fixed;
-        z-index: 999;
+        z-index: 1;
         left: 0;
         top: 90%;
         bottom: 0;
@@ -1250,6 +1250,7 @@ width: 91%;
         box-sizing: border-box;
         top: -100%;
         transition: all .4s;
+        align-content: start;`
     }
 
     .secNav .navbar.open {
@@ -1258,6 +1259,7 @@ width: 91%;
 
     .secNav .navbar li {
         width: 30%;
+        margin: 15px auto;
     }
 
     .secNav .navbar li a {
@@ -1271,11 +1273,12 @@ width: 91%;
     }
 
     .secNav .navbar li .subs {
-        margin-left: 0.2%;
+       left: 0;
         top: 0;
         box-shadow: none !important;
         background: #008b8b;
         height: 82vh;
+        align-content: start;
 
     }
 
@@ -1291,14 +1294,11 @@ width: 91%;
         text-decoration: none;
     }
 
-    .secNav .navbar li .furniture {
-        margin-left: -34.9%;
-    }
+
 
     .secNav .navbar li .sport {
         display: block !important;
-        margin-left: -69.9%;
-        height: 90%;
+          
 
 
     }
@@ -1526,11 +1526,24 @@ width: 91%;
         justify-content: space-around;
     }
 
+    .mainHeader nav .headerMenu .fas:nth-child(2) {
+        line-height: 5px;
+    
+    }
+    .mainHeader nav .headerMenu li {
+        margin-top: -4px;
+    }
     .mainHeader nav .headerMenu li a {
         font-size: 19px;
         margin-left: 4px;
         margin-top: 5px;
+      
     }
+    
+    .mainHeader nav .headerMenu li:nth-child(2) {
+        line-height: 33px;
+    }
+    
 
     .mainHeader .logo {
         display: none;
@@ -1689,6 +1702,14 @@ width: 91%;
 
     .firstSection article .hName .productName {
         font-size: 12px;
+    }
+    
+    .mainHeader nav .headerMenu li:nth-child(2) {
+        line-height: 43px;
+    }
+    
+    .mainHeader nav .headerMenu li {
+    margin-top: 0px;
     }
 
 }
