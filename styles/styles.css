@@ -451,15 +451,11 @@ u {
 
 .whichOne {
     width: 100%;
-
-    height: 90%;
-
+    height: 70%;
     display: flex;
-
     flex-direction: column;
-
     align-items: center;
-
+    overflow: hidden;
     justify-content: space-around;
 }
 

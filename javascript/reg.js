@@ -15,13 +15,16 @@ $logIn.addEventListener('click', function (event) {
     $regDiv.classList.add('hide');
     $logInForm.classList.remove('hide')
     $bg.style.marginLeft = null;
+    $modalForms.style.height = "50%";
+    $askUser.classList.add('hide');
 })
 
 $regIst.addEventListener('click', function (event) {
     $logInForm.classList.add('hide');
     $askUser.classList.remove('hide');
     $bg.style.marginLeft = "50%";
-    $bg.style.transition = "all .4s"
+    $bg.style.transition = "all .4s";
+    $regDiv.classList.add('hide');
 })
 
 $person.addEventListener('click', function (event) {
