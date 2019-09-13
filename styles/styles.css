@@ -1,11 +1,11 @@
 @font-face {
-    font-family: "mtav";
-    src: url("../fonts/bpg_extrasquare_mtavruli_2009.ttf")
+    font-family: mtav;
+    src: url(../fonts/bpg_extrasquare_mtavruli_2009.ttf)
 }
 
 @font-face {
-    font-family: "deja";
-    src: url("../fonts/bpg_dejavu_sans.ttf")
+    font-family: deja;
+    src: url(../fonts/bpg_dejavu_sans.ttf)
 }
 
 body,
@@ -13,7 +13,7 @@ html {
     padding: 0;
     margin: 0;
     background: #eeebeb;
-    width: 100%;
+    width: 100%
 }
 
 .style-two {
@@ -22,62 +22,76 @@ html {
     margin-top: 0;
     margin-left: 5.5%;
     height: 1px;
-    background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0), #0eb5b5, rgba(0, 0, 0, 0));
-    background-image: -moz-linear-gradient(left, rgba(0, 0, 0, 0), #0eb5b5, rgba(0, 0, 0, 0));
-    background-image: -ms-linear-gradient(left, rgba(0, 0, 0, 0), #0eb5b5, rgba(0, 0, 0, 0));
-    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), #0eb5b5, rgba(0, 0, 0, 0));
+    background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0), #0eb5b5, rgba(0, 0, 0, 0))
 }
 
-
-
 .clear {
-    clear: both;
+    clear: both
 }
 
 .burgerMenu {
-    display: none;
+    display: none
 }
 
 .Search2 {
-    display: none;
+    display: none
 }
 
 .fa-arrow-left {
     display: none;
-    animation: bigToSmall 1s ease-in-out;
+    -webkit-animation: bigToSmall 1s ease-in-out;
+    animation: bigToSmall 1s ease-in-out
 }
 
-@keyframes bigToSmall {
+@-webkit-keyframes bigToSmall {
 
     0%,
+    100%,
     20%,
-    60%,
-    100% {
+    60% {
+        -webkit-transform: translate(0);
         transform: translate(0)
     }
 
     40%,
     80% {
+        -webkit-transform: translateX(10px);
         transform: translateX(10px)
     }
 }
 
-/* Header + Nav Styles Start */
+@keyframes bigToSmall {
+
+    0%,
+    100%,
+    20%,
+    60% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    40%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
+}
+
 .mainHeader {
     background: #1eb2d5;
     width: 100%;
     position: absolute;
     top: 10px;
-    top: 10px;
+    top: 10px
 }
 
 .mainHeader .logo {
-    width: 5%;
+    width: 5%
 }
 
 .mainHeader a {
     display: block;
-    float: left;
+    float: left
 }
 
 .mainHeader a img {
@@ -85,107 +99,73 @@ html {
     margin: 2px 2px 2px 2px
 }
 
-header .los {
-    float: left;
-    line-height: 40px;
-    font-family: mtav;
-    font-size: 18px;
-    font-weight: 500;
-    margin-left: 10px;
-    position: relative;
-    color: white;
-
-}
-
-header .los::after {
-    content: "";
-    position: absolute;
-    width: 80%;
-    height: 1px;
-    background: white;
-    left: 10%;
-    bottom: 4%;
-    background-image: -webkit-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
-    background-image: -moz-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
-    background-image: -ms-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
-    background-image: -o-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
-}
-
-header .los::before {
-    content: "";
-    position: absolute;
-    width: 115%;
-    height: 1px;
-    background: white;
-    left: -8%;
-    bottom: -10%;
-    background-image: -webkit-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
-    background-image: -moz-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
-    background-image: -ms-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
-    background-image: -o-linear-gradient(right, #0eb5b5, rgba(0, 0, 0, 0), #0eb5b5);
-}
-
-u {
-    text-decoration: underline white;
-}
-
 .mainHeader nav .headerMenu {
-    width: 20%;
+    width: 23%;
     max-width: 100%;
     list-style: none;
     float: right;
-    margin-top: 1.8%;
+    margin-top: 1.8%
 }
 
 .mainHeader nav .headerMenu li a {
     text-decoration: none;
-    padding: 0 5px;
+    padding: 0 5px
 }
 
 .mainHeader nav .headerMenu li a {
     font-family: mtav;
-    font-size: 20px;
+    font-size: 20px
 }
 
-
-/* Search Styles */
-
 .mainHeader .Search {
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     height: 25px;
     margin-top: 25px;
     min-width: 2%;
-    float: right;
+    float: right
 }
 
 .mainHeader .Search .searchbb {
-
-    background: rgba(40, 159, 187, 0.68);
-    border: solid 1px white;
+    background: rgba(40, 159, 187, .68);
+    border: solid 1px #fff;
     border-radius: 100%;
     width: 30px;
     height: 30px;
     position: relative;
-    transition: all .4s;
-
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
 }
 
 .mainHeader .Search .searchbg {
     width: 100%;
     height: 100%;
     border-radius: 100%;
-    outline: none;
+    outline: 0;
     border: none;
-    color: white;
-    background: transparent;
+    color: #fff;
+    background: 0 0;
+    -webkit-transition: width .4s ease-in;
+    -o-transition: width .4s ease-in;
     transition: width .4s ease-in;
     animation: padd 3.3s ease-in-out infinite;
     -webkit-animation: padd 3.3s ease-in-out infinite;
     -moz-animation: padd 3.3s ease-in-out infinite;
+}
 
+@-webkit-keyframes padd {
+    0% {
+        text-indent: 30px;
+    }
 
+    100% {
+        text-indent: -40px;
+    }
 }
 
 @keyframes padd {
@@ -206,60 +186,105 @@ u {
     bottom: -10px;
     width: 1.5px;
     height: 15px;
-    background: white;
+    background: #fff;
+    -webkit-transform: rotate(-235deg);
+    -ms-transform: rotate(-235deg);
     transform: rotate(-235deg)
 }
 
-
-
-.mainHeader .Search .searchbg::placeholder {
-
-    color: white;
+.mainHeader .Search .searchbg::-webkit-input-placeholder {
+    color: #fff;
     font-family: deja;
     font-size: 9px
 }
 
+.mainHeader .Search .searchbg::-moz-placeholder {
+    color: #fff;
+    font-family: deja;
+    font-size: 9px
+}
+
+.mainHeader .Search .searchbg:-ms-input-placeholder {
+    color: #fff;
+    font-family: deja;
+    font-size: 9px
+}
+
+.mainHeader .Search .searchbg::-ms-input-placeholder {
+    color: #fff;
+    font-family: deja;
+    font-size: 9px
+}
+
+.mainHeader .Search .searchbg::placeholder {
+    color: #fff;
+    font-family: deja;
+    font-size: 9px
+}
+
+.mainHeader .Search .searchbg:focus::-webkit-input-placeholder {
+    font-size: 12px;
+    color: #fff;
+    opacity: .7
+}
+
+.mainHeader .Search .searchbg:focus::-moz-placeholder {
+    font-size: 12px;
+    color: #fff;
+    opacity: .7
+}
+
+.mainHeader .Search .searchbg:focus:-ms-input-placeholder {
+    font-size: 12px;
+    color: #fff;
+    opacity: .7
+}
+
+.mainHeader .Search .searchbg:focus::-ms-input-placeholder {
+    font-size: 12px;
+    color: #fff;
+    opacity: .7
+}
+
 .mainHeader .Search .searchbg:focus::placeholder {
     font-size: 12px;
-    color: white;
-    opacity: 0.7;
+    color: #fff;
+    opacity: .7
 }
 
 .mainHeader .Search button i {
-
-    color: white;
-    opacity: 0.8;
+    color: #fff;
+    opacity: .8
 }
 
 .mainHeader .ser {
-
-    outline: none;
-    background: none;
+    outline: 0;
+    background: 0 0;
     border: none;
     position: absolute;
     left: 1%;
     top: calc(43% - 6px);
-    color: white;
+    color: #fff;
     cursor: pointer;
-    display: none;
+    display: none
 }
 
-/* Links Hover Effect */
-
 .nav-item {
-    border: none;
+    border: none
 }
 
 .nav-link {
     position: relative;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-    color: white;
-    font-size: 20px;
+    color: #fff;
+    font-size: 20px
 }
 
 .nav-link:hover {
     color: #1eb2d5;
-    background-color: white;
+    background-color: #fff
 }
 
 .nav-link:after {
@@ -269,17 +294,18 @@ u {
     right: 15px;
     width: 12px;
     height: 12px;
-    border: 3px solid white;
+    border: 3px solid #fff;
     border-width: 3px 3px 0 0;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-    opacity: 0;
+    opacity: 0
 }
 
-/*top: -3px; right: -4px;*/
 .nav-link:hover:after {
     top: -8px;
     right: -8px;
-    opacity: 1;
+    opacity: 1
 }
 
 .nav-link:before {
@@ -289,35 +315,30 @@ u {
     left: 15px;
     width: 12px;
     height: 12px;
-    border: 3px solid white;
+    border: 3px solid #fff;
     border-width: 0 0 3px 3px;
+    -webkit-transition: .5s;
+    -o-transition: .5s;
     transition: .5s;
-    opacity: 0;
+    opacity: 0
 }
 
-/*bottom: -8px;left: -4px*/
 .nav-link:hover:before {
     bottom: -8px;
     left: -8px;
-    opacity: 1;
+    opacity: 1
 }
-
-
-/* Header + Nav Styles End */
-
-
-/* Modal Profile Styles Start */
 
 .profile {
     position: fixed;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.76);
+    background: rgba(0, 0, 0, .76);
     z-index: 999;
     top: 0;
     left: 0;
     font-family: mtav;
-
+    display: none
 }
 
 .profile .profLay {
@@ -325,20 +346,57 @@ u {
     min-width: 300px;
     height: 50%;
     background: #eeebeb;
-    border: solid 1px white;
+    border: solid 1px #fff;
     margin-left: 50%;
+    -webkit-transform: translate(-50%);
+    -ms-transform: translate(-50%);
     transform: translate(-50%);
     margin-top: 2%;
-    overflow-y: auto;
+    cursor: pointer;
+    position: relative
+}
 
+.profile .profLay .closeLay {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: #cecece;
+    right: 0;
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    top: 20px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    transition: color .4s
+}
+
+.profile .profLay .prevLay {
+    position: absolute;
+    width: 60px;
+    height: 30px;
+    background: #cecece;
+    left: 0;
+    text-align: right;
+    color: #fff;
+    font-size: 20px;
+    top: 20px;
+    padding-right: 5px;
+    box-sizing: border-box;
+    transition: color .4s;
+    transform: rotateY(180deg);
+}
+
+.profile .profLay .closeLay:hover,
+.profile .profLay .prevLay:hover {
+    color: #000
 }
 
 .profile .profLay header {
     float: left;
     height: 40px;
     width: 100%;
-    position: relative;
-
+    position: relative
 }
 
 .profile .profLay header a {
@@ -348,35 +406,36 @@ u {
     text-decoration: none;
     font-size: 20px;
     line-height: 40px;
-    color: #0d7b95;
-    font-family: mtav;
+    color: #008b8b;
+    font-family: mtav
 }
 
 .profile .profLay header .back {
-
     width: 50%;
     height: 100%;
-    background: rgba(141, 134, 134, 0.66);
+    background: #cecece;
     z-index: -1;
+    -o-transition: all .4s;
     transition: all .4s;
     -webkit-transition: all .4s;
-    -moz-transition: all .4s;
-
+    -moz-transition: all .4s
 }
-
 
 .profile .profLay form {
     width: 80%;
     height: 90%;
     margin-left: 50%;
     padding-top: 20px;
+    box-sizing: border-box;
+    -webkit-transform: translate(-50%, 5%);
+    -ms-transform: translate(-50%, 5%);
     transform: translate(-50%, 5%);
     overflow-x: hidden;
-    overflow-y: auto;
+    overflow-y: auto
 }
 
 .profile .profLay form .first {
-    position: relative;
+    position: relative
 }
 
 .profile .profLay form span {
@@ -384,29 +443,26 @@ u {
     position: absolute;
     bottom: 42px;
     color: grey;
-    transition: all .4s;
-
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
 }
 
 .profile .profLay form input {
     width: 100%;
     border: none;
-    border-bottom: solid 1px lightgrey;
+    border-bottom: solid 1px #d3d3d3;
     padding-bottom: 5px;
     margin-bottom: 40px;
-    background: transparent;
-    color: rgba(0, 0, 0, 0.54);
+    background: 0 0;
+    color: rgba(0, 0, 0, .54);
     font-weight: 900;
-    outline: none;
-
+    outline: 0
 }
 
-
-
-
 .profile .profLay input:focus + span {
-    color: dodgerblue;
-    bottom: 66px;
+    color: #1e90ff;
+    bottom: 66px
 }
 
 .profile .profLay div::after {
@@ -416,285 +472,361 @@ u {
     bottom: 40px;
     width: 0;
     height: 2px;
-    background: blue;
-    transition: all .4s;
+    background: #00f;
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
 }
 
 .profile .profLay input:focus ~ div::after {
     width: 100%;
     height: 2px;
-    background: dodgerblue;
-
+    background: #1e90ff
 }
 
 .profile .profLay form button {
     width: 100%;
-    height: 30px;
+    height: 30px
 }
 
-.profile .profLay form input[type="submit"],
-.profile .profLay form button {
+.profile .profLay form button,
+.profile .profLay form input[type=submit] {
     height: 30px;
     cursor: pointer;
     margin-top: 25px;
+    font-family: mtav;
 }
 
-.profile .profLay .fizPi input[type="submit"] {
-    margin-top: 50px;
+.profile .profLay .fizPi input[type=submit] {
+    margin-top: 24px;
+    border: none;
+    font-family: mtav;
 }
 
-.profile .profLay form input[type="submit"]:hover,
-.profile .profLay form button:hover {
-    color: darkcyan;
+.profile .profLay form button:hover,
+.profile .profLay form input[type=submit]:hover {
+    color: #008b8b
 }
-
 
 .whichOne {
     width: 100%;
     height: 70%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
     overflow: hidden;
-    justify-content: space-around;
+    -ms-flex-pack: distribute;
+    justify-content: space-around
 }
 
 .whichOne a {
     text-decoration: none;
     font-family: mtav;
     font-size: 20px;
-    color: darkcyan;
+    color: grey;
+    transition: color .4s
 }
 
-.fizPi {
-    padding-bottom: 20px;
+.whichOne a:hover {
+    color: #008b8b
 }
 
 .profile .profLay form label input {
     width: auto;
-    margin-bottom: 0;
+    margin-bottom: 0
+}
+
+.profile .profLay form label {
+    font-size: 12px
 }
 
 .profile .profLay .logInForm {
-    height: 80%;
+    height: 80%
 }
 
-.profile .profLay .logInForm input[type="submit"] {
+.profile .profLay .logInForm input[type=submit] {
     margin-bottom: 0;
-    margin-top: 4%;
+    margin-top: 4%
 }
 
-/*
-.profile .profLay .logInForm {
-    width: 40%;
-    height: 90%;
-    margin-left: 50%;
-    transform: translate(-50%, 5%);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
 
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
 
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 15px;
+    width: 15px;
+    background-color: #ccc;
 
 }
 
-.profile .profLay .logInForm input {
-    width: 100%;
-    margin-bottom: 15px;
+.container:hover .checkmark {
+    background-color: #ccc;
 }
-*/
 
-/* Modal Profile Styles End */
-/* Slider Styles Start */
+.container input:checked ~ .checkmark {
+    background-color: #2196f3;
+
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    left: 3.5px;
+    top: 1.5px;
+    width: 5px;
+    height: 7px;
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg)
+}
+
 .slider {
     margin-top: 96px;
     width: 100%;
-    height: 350px;
+    height: 350px
 }
 
 #slider {
     width: 100%;
-    height: 100%;
-    margin: 0;
+    margin: 0
 }
 
 #slider .slider {
-    margin-left: 0;
+    margin-left: 0
 }
 
 #slider img {
     width: 100%;
-    height: 100%;
+    height: 100%
 }
 
-/* Slider Styles End */
-
-/* Second Navbar */
 .secNav {
     background: #1eb2d5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin: 0 0 15px 0;
-    position: relative;
-
+    position: relative
 }
 
-/* Left & Right ARrows Styles */
 .secNav .arrowsIcons {
-
     padding: 5px 11px 5px 10px;
-    color: white;
+    color: #fff;
     text-align: center;
+    -webkit-animation: animee ease-in-out 2s infinite;
     animation: animee ease-in-out 2s infinite;
-    font-size: 25px;
-
-
-
+    font-size: 25px
 }
 
 .secNav .arrowsIcons:nth-child(1) {
-
     margin-bottom: 2px;
-    animation: anime ease-in-out 2s infinite;
+    -webkit-animation: anime ease-in-out 2s infinite;
+    animation: anime ease-in-out 2s infinite
+}
+
+@-webkit-keyframes anime {
+
+    0%,
+    100%,
+    20%,
+    60% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    40%,
+    80% {
+        -webkit-transform: translateX(10px);
+        transform: translateX(10px)
+    }
 }
 
 @keyframes anime {
 
     0%,
+    100%,
     20%,
-    60%,
-    100% {
+    60% {
+        -webkit-transform: translate(0);
         transform: translate(0)
     }
 
     40%,
     80% {
+        -webkit-transform: translateX(10px);
         transform: translateX(10px)
     }
-
 }
 
 .arrowsIcons:nth-child(2) {
-    animation: animee ease-in-out 2s infinite;
+    -webkit-animation: animee ease-in-out 2s infinite;
+    animation: animee ease-in-out 2s infinite
+}
+
+@-webkit-keyframes animee {
+
+    0%,
+    100%,
+    20%,
+    60% {
+        -webkit-transform: translate(0);
+        transform: translate(0)
+    }
+
+    40%,
+    80% {
+        -webkit-transform: translateX(-10px);
+        transform: translateX(-10px)
+    }
 }
 
 @keyframes animee {
 
     0%,
+    100%,
     20%,
-    60%,
-    100% {
+    60% {
+        -webkit-transform: translate(0);
         transform: translate(0)
     }
 
     40%,
     80% {
+        -webkit-transform: translateX(-10px);
         transform: translateX(-10px)
     }
-
 }
-
-/* Left & Right ARrows Styles End */
-
 
 .secNav .navbar {
     width: 90%;
     background: #1eb2d5;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     padding-left: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     height: 70px;
     line-height: 65px;
     position: initial;
     overflow: auto;
-    white-space: nowrap;
-
-
-
+    white-space: nowrap
 }
-
 
 .secNav .navbar::-webkit-scrollbar {
     height: 3px;
-    background: #5ae875;
+    background: #5ae875
 }
 
 .secNav .navbar::-o-scrollbar {
     height: 3px;
-    background: #5ae875;
+    background: #5ae875
 }
 
 .secNav .navbar::-ms-scrollbar {
     height: 3px;
-    background: #5ae875;
+    background: #5ae875
 }
 
 .secNav .navbar::-webkit-scrollbar-track {
-    background: transparent;
+    background: 0 0
 }
 
 .secNav .navbar::-o-scrollbar-track {
-    background: transparent;
+    background: 0 0
 }
 
 .secNav .navbar::-ms-scrollbar-track {
-    background: transparent;
+    background: 0 0
 }
-
 
 .secNav .navbar::-webkit-scrollbar-thumb {
     border-radius: 4px;
     background: #008b8b;
-    cursor: pointer;
-
+    cursor: pointer
 }
 
 .secNav .navbar::-o-scrollbar-thumb {
     border-radius: 4px;
     background: #008b8b;
-    cursor: pointer;
-
+    cursor: pointer
 }
 
 .secNav .navbar::-ms-scrollbar-thumb {
     border-radius: 4px;
     background: #008b8b;
-    cursor: pointer;
-
+    cursor: pointer
 }
-
-
 
 .secNav .navbar li a {
     font-size: 16px;
     text-decoration: none;
     font-family: mtav;
-    padding: 0 5px;
-
-
-
+    padding: 0 5px
 }
 
-
-
-
-/* Technic SubMenus Styles Start */
-
-
-
 .secNav .navbar li .subs {
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     list-style: none;
     position: absolute;
     z-index: 1;
     background: #1eb2d5;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
     width: 100%;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
     left: 0;
     top: 80px;
@@ -702,166 +834,133 @@ u {
     -moz-transition: all .5s;
     -o-transition: all .5s;
     -ms-transition: all .5s;
+    -webkit-perspective: 400px;
     perspective: 400px;
+    -webkit-transform: rotateX(90deg);
     transform: rotateX(90deg);
-    padding-left: 0px;
-    padding-bottom: 15px;
-
-
+    padding-left: 0;
+    padding-bottom: 15px
 }
-
 
 .secNav li .subs li a {
-    text-decoration: underline lightgrey;
-    font-size: 18px;
-
+    -webkit-text-decoration: underline #d3d3d3;
+    text-decoration: underline #d3d3d3;
+    font-size: 14px
 }
 
-
 .secNav .navbar li:hover .subs {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     -webkit-transition: all .5s;
     -moz-transition: all .5s;
     -o-transition: all .5s;
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
-    transform: rotateX(0deg);
-    box-shadow: 0 50px 70px #4bd1d1;
-
-
-
+    -webkit-transform: rotateX(0);
+    transform: rotateX(0);
+    -webkit-box-shadow: 0 50px 70px #4bd1d1;
+    box-shadow: 0 50px 70px #4bd1d1
 }
-
-
 
 .secNav .navbar li .subs li {
     width: 23.5%;
     text-align: center;
     margin-left: 15px;
-    border-bottom: solid 1px lightgrey;
-
+    border-bottom: solid 1px #d3d3d3
 }
 
 .secNav .navbar li .subs li a {
-    color: white;
-
-
-
-
-
+    color: #fff
 }
 
 .secNav .navbar li .subs li a:hover {
-    color: #1eb2d5;
-
-
+    color: #1eb2d5
 }
-
-/* Technic SubMenus Styles End */
-
-/* Furniture Submenu Styles Start */
 
 .secNav .navbar li .furniture {
-    left: 0;
+    left: 0
 }
 
-/* Sport Submenu Styles Start */
 .secNav .navbar li .sport {
-    left: 0;
-
-
+    left: 0
 }
 
-
-/* HR + H1 */
 h1 {
     cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
     user-select: none;
     width: 100%;
     text-align: center;
     font-family: mtav;
     letter-spacing: 2px;
     font-size: 40px;
-    color: darkcyan;
-    margin-bottom: 0;
-
+    color: #008b8b;
+    margin-bottom: 0
 }
-
-/*
-h1::selection {
-    background: transparent;
-}
-*/
 
 .bar2 {
-    border-radius: 100%;
+    border-radius: 100%
 }
 
-
-/* HR END */
-
-/* ScrollBar Styles Start */
 ::webkit-scrollbar-track {
-    background: transparent;
+    background: 0 0
 }
 
 ::moz-scrollbar-track {
-    background: transparent;
+    background: 0 0
 }
 
 ::o-scrollbar-track {
-    background: transparent;
+    background: 0 0
 }
 
 ::ms-scrollbar-track {
-    background: transparent;
+    background: 0 0
 }
 
 ::-webkit-scrollbar {
     width: 5px;
     background-color: #f6f6f6;
-    border-left: solid 2px white;
-    opacity: 0.1;
+    border-left: solid 2px #fff;
+    opacity: .1
 }
 
 ::-moz-scrollbar {
     width: 5px;
     background-color: #f6f6f6;
-    border-left: solid 2px white;
-    opacity: 0.1;
+    border-left: solid 2px #fff;
+    opacity: .1
 }
 
 ::-o-scrollbar {
     width: 5px;
     background-color: #f6f6f6;
-    border-left: solid 2px white;
-    opacity: 0.1;
+    border-left: solid 2px #fff;
+    opacity: .1
 }
 
 ::-ms-scrollbar {
     width: 5px;
     background-color: #f6f6f6;
-    border-left: solid 2px white;
-    opacity: 0.1;
+    border-left: solid 2px #fff;
+    opacity: .1
 }
 
 ::-webkit-scrollbar:hover {
-    opacity: 1;
+    opacity: 1
 }
 
 ::-webkit-scrollbar-thumb {
     background: #1eb2d5;
-    border-radius: 4px;
+    border-radius: 4px
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: #7cd870;
-
+    background: #7cd870
 }
-
-/* ScrollBar Styles End */
-
-/* News Box Styles */
 
 .firstSection {
     width: 98%;
@@ -869,70 +968,68 @@ h1::selection {
     padding-top: 5px;
     min-height: 500px;
     margin-bottom: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    flex-direction: column;
-
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column
 }
-
-/* SelectPanel + LeftRight Buttons Styles start */
-
 
 .firstSection nav {
     width: 100%;
-    position: relative;
+    position: relative
 }
 
 .firstSection nav .detailed_list {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     list-style: none;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
-    padding-left: 0;
+    padding-left: 0
 }
 
 .firstSection nav .detailed_list li a {
     padding: 10px;
     text-decoration: none;
     font-family: deja;
-    color: darkcyan;
-
+    color: #008b8b
 }
 
 .firstSection nav .detailed_list li {
     border-right: solid 1px #1eb2d5;
-    transition: all .4s;
-
-
+    -webkit-transition: all .4s;
+    -o-transition: all .4s;
+    transition: all .4s
 }
 
-
-
 .firstSection nav .detailed_list li:hover {
-
-    background: darkcyan;
+    background: #008b8b
 }
 
 .firstSection nav .detailed_list li:hover a {
-    /*    color: #5DADE2;*/
-    color: darkcyan;
-
+    color: #008b8b
 }
 
-
-
-
 .firstSection nav .detailed_list li a:hover {
-    color: white;
+    color: #fff
 }
 
 .firstSection nav .detailed_list li a {
-    color: darkcyan;
+    color: #008b8b
 }
 
 .firstSection nav .detailed_list li:last-child {
-    border-right: none;
+    border-right: none
 }
 
 .firstSection nav .detailed_list li ul {
@@ -940,39 +1037,45 @@ h1::selection {
     left: 0;
     bottom: -10px;
     padding-left: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
     list-style: none;
-    display: none;
-
+    display: none
 }
 
 .firstSection nav .detailed_list li ul li {
-    position: relative;
+    position: relative
 }
 
-
-
-
-
 .firstSection .sectionFooter {
-
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     width: 100%;
-    align-items: baseline;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline
 }
 
 .firstSection article {
     width: 15%;
-
     border-radius: 10px;
-    background: #FFF;
+    background: #fff;
     position: relative;
     margin-top: 7.5%;
-    padding-top: 60px;
-
+    padding-top: 60px
 }
 
 .firstSection article figure {
@@ -983,7 +1086,7 @@ h1::selection {
     position: absolute;
     bottom: 66%;
     margin-left: 4.7%;
-    overflow: hidden;
+    overflow: hidden
 }
 
 .firstSection article img {
@@ -992,31 +1095,19 @@ h1::selection {
     border-radius: 10px 10px 0 0;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
-    transition: all .4s;
+    transition: all .4s
 }
 
 .firstSection article img:hover {
-
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
-    -o-transform: scale(1.1);
-    transform: scale(1.1);
-
-
-
+    transform: scale(1.1)
 }
-
-/* Like Button */
-
-
 
 .firstSection article:hover {
-
-    box-shadow: 0 0 5px black;
-
+    -webkit-box-shadow: 0 0 5px #000;
+    box-shadow: 0 0 5px #000
 }
-
-/* Like Button End */
 
 .firstSection article .title {
     width: 91%;
@@ -1028,15 +1119,14 @@ h1::selection {
     font-family: mtav;
     font-size: 18px;
     border-radius: 0 0 6px 6px;
-    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .firstSection article .title a {
     text-decoration: none;
-    color: black;
+    color: #000
 }
-
-/* Everything About Prices Styles Start */
 
 .firstSection article .hName {
     width: 90%;
@@ -1044,316 +1134,293 @@ h1::selection {
     margin-top: 10px;
     height: 35px;
     padding: 0 5px;
+    -webkit-box-sizing: border-box;
     box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
     flex-direction: row;
-    justify-content: space-between;
-
-
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between
 }
-
-
 
 .firstSection article .hName h2 {
     width: 100%;
     font-variant: small-caps;
     font-weight: bolder;
     font-size: 20px;
+    -webkit-transition: color .4s;
+    -o-transition: color .4s;
     transition: color .4s;
     text-align: center;
-    margin: 0;
-
+    margin: 0
 }
 
 .firstSection article .hName .productName {
-
     position: relative;
+    -webkit-transition: color .4s;
+    -o-transition: color .4s;
     transition: color .4s;
     text-align: left;
     text-decoration: none;
-    color: black;
-    align-self: center;
+    color: #000;
+    -ms-flex-item-align: center;
+    -ms-grid-row-align: center;
+    align-self: center
 }
 
 .firstSection article .hName .productName::after {
     content: "";
     position: absolute;
-    width: 0px;
+    width: 0;
     height: 5px;
     bottom: -15%;
     left: 1%;
     background: #1eb2d5;
     background: red;
-    transition: width .4s, background .3s;
+    -webkit-transition: width .4s, background .3s;
+    -o-transition: width .4s, background .3s;
+    transition: width .4s, background .3s
 }
 
 .firstSection article .hName .productName:hover::after {
-
     width: 60px;
-    background: #1eb2d5;
-
+    background: #1eb2d5
 }
-
-/* Everything About Prices Styles Start */
 
 .firstSection article .hPrices {
     width: 90%;
     height: 30px;
     margin-left: 5.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    /*    border-bottom: solid 1px darkcyan;*/
     padding: 0 5px;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
-    box-sizing: border-box;
-
-
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box
 }
 
 .firstSection article .hPrices .changedPrice {
-    font-size: 20px;
+    font-size: 20px
 }
 
 .firstSection article .hPrices h5 {
-
     font-size: 20px;
     width: 27%;
     line-height: 20px;
-    margin-top: 0;
+    margin-top: 0
 }
 
 .firstSection article .hPrices .price {
-    opacity: 0.8;
-    font-size: 18px;
+    opacity: .8;
+    font-size: 18px
 }
 
 .firstSection article .hPrices .oldPrice {
-    opacity: 0.52;
-    color: black;
+    opacity: .52;
+    color: #000
 }
 
 .firstSection article .hPrices p {
-
     width: 10%;
     font-size: 20px;
     text-align: center;
-    margin-top: 0;
-
+    margin-top: 0
 }
-
 
 .firstSection article .oldPrice {
     width: 27%;
     text-decoration: line-through;
-    color: red;
+    color: red
 }
 
 .firstSection article .emoji {
-    width: 10%;
+    width: 10%
 }
 
-.firstSection article .emoji .fa-arrow-right {
-    background: linear-gradient(to right, red, #10e5ac);
-    background: -webkit-linear-gradient(to right, red, #10e5ac);
-    background: -ms-linear-gradient(to right, red, #10e5ac);
-    background: -o-linear-gradient(to right, red, #10e5ac);
-    background: -moz-linear-gradient(to right, red, #10e5ac);
-    text-fill-color: transparent;
-    -webkit-text-fill-color: transparent;
-    -ms-text-fill-color: transparent;
-    -o-text-fill-color: transparent;
-    -moz-text-fill-color: transparent;
-    background-clip: text;
-    -webkit-background-clip: text;
-    -ms-background-clip: text;
-    -o-background-clip: text;
-    -moz-background-clip: text;
-}
 
 .firstSection article .newPrice {
     width: 27%;
     text-align: right;
-    color: #5DADE2;
+    color: #5dade2
 }
-
-/* Everything About Prices Styles End */
-
-/* Timing Functions Styles Start */
 
 .firstSection article .time {
     width: 97%;
     margin-left: 1.7%;
     font-weight: 700;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     margin-top: 5px;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
-    color: black;
+    color: #000;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
     align-items: flex-end;
     font-size: 18px;
-    font-family: mtav;
+    font-family: mtav
 }
 
 .firstSection article .time .far {
     font-size: 20px;
     margin-top: 5px;
-    color: darkcyan;
+    color: #008b8b
 }
-
 
 .firstSection article .time .span1 {
     font-size: 28px;
-    color: #5DADE2;
-    margin-right: 3px;
-
+    color: #5dade2;
+    margin-right: 3px
 }
 
 .firstSection article .time .span2 {
-    opacity: 0.52;
+    opacity: .52
 }
-
-
-/* Timing Functions Styles End */
-
-
-/* Socials Start*/
 
 .firstSection article .socials {
     position: relative;
+    -ms-flex-item-align: start;
     align-self: flex-start;
     bottom: -18px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     margin-top: -2.5%;
     left: 0;
     margin-left: 0;
-    margin-right: 0px;
-
+    margin-right: 0
 }
 
 .firstSection article .socials a {
     color: grey;
-    background: #FFF;
-    border-right: solid 1px darkcyan;
+    background: #fff;
+    border-right: solid 1px #008b8b;
     width: 40%;
-    height: 40px;
+    height: 35px;
     text-align: center;
     line-height: 45px;
-    margin-bottom: 10px;
+    margin-bottom: 10px
 }
 
 .firstSection article .socials a:last-child {
-    border: none;
+    border: none
 }
 
 .firstSection article .socials .fa-facebook-f {
-    transition: 1s;
-
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s
 }
 
 .firstSection article .socials a:hover .fa-facebook-f {
     color: #0000e6;
-    transform: rotateX(360deg);
-
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg)
 }
 
 .firstSection article .socials .fa-star {
-    transition: 1s;
-
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s
 }
 
 .firstSection article .socials a:hover .fa-star {
     color: #ffe033;
-    transform: rotateX(360deg);
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg)
 }
 
 .firstSection article .socials .fa-heart {
-    transition: 1s;
-
+    -webkit-transition: 1s;
+    -o-transition: 1s;
+    transition: 1s
 }
 
 .firstSection article .socials a:hover .fa-heart {
-    color: #FC2F55;
-    transform: rotateX(360deg);
+    color: #fc2f55;
+    -webkit-transform: rotateX(360deg);
+    transform: rotateX(360deg)
 }
 
-/* Socials End*/
-
-
-
-
 @media screen and (max-width:1025px) {
-
-    /* Search Styles */
     .mainHeader .Search {
         margin-top: 1.8%;
-        margin-left: 42%;
+        margin-left: 42%
     }
 
-    /* Header Navbar */
     .mainHeader nav .headerMenu {
-        margin-top: 2.8%;
+        margin-top: 2.8%
     }
 
     .mainHeader nav .headerMenu li a {
-        font-size: 15px;
+        font-size: 15px
     }
 
     .firstSection .category {
-        margin-inline-end: 1px;
+        -webkit-margin-end: 1px;
+        margin-inline-end: 1px
     }
 
-    /* Select Section + Slider Arrows */
     .secNav .navbar li .sport {
-        margin-top: 0px;
+        margin-top: 0
     }
-
 }
 
 @media screen and (max-width:769px) {
-
-
-    /* Header Styles Start */
     .mainHeader {
         position: fixed;
         z-index: 1;
         left: 0;
         top: 90%;
-        bottom: 0;
+        bottom: 0
     }
 
     .mainHeader nav .headerMenu {
         width: 100%;
         line-height: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
-        margin-top: 2%;
+        margin-top: 2%
     }
 
     .mainHeader nav .headerMenu li a {
         font-size: 19px;
         margin-left: 4px;
-        margin-top: 5px;
+        margin-top: 5px
     }
 
     .mainHeader .logo {
-        display: none;
+        display: none
     }
 
     .mainHeader .los {
-        display: none;
+        display: none
     }
 
     .mainHeader .Search {
-        display: none;
+        display: none
     }
 
-    /* Header Styles End */
-
-    /* Burgering secNav Styles Start*/
     .head {
         height: 75px;
         width: 100%;
-        position: relative;
+        position: relative
     }
 
     .head .fa-arrow-left {
@@ -1363,23 +1430,33 @@ h1::selection {
         font-size: 25px;
         color: #008b8b;
         display: none;
-        transition: all 1s;
-
+        -webkit-transition: all 1s;
+        -o-transition: all 1s;
+        transition: all 1s
     }
 
     .burgerMenu {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         height: 75px;
         width: 65px;
-        justify-content: center;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center
     }
 
     .burgerMenu .bar1 {
         width: 30px;
         height: 3px;
         background: #1eb2d5;
-        align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center
     }
 
     .burgerMenu .bar2 {
@@ -1387,8 +1464,10 @@ h1::selection {
         height: 3px;
         background: #1eb2d5;
         margin-top: 8px;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
         align-self: center;
-        margin-right: 10px;
+        margin-right: 10px
     }
 
     .burgerMenu .bar3 {
@@ -1396,39 +1475,38 @@ h1::selection {
         height: 3px;
         background: #1eb2d5;
         margin-top: 8px;
-        align-self: center;
+        -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center
     }
 
     .close .bar1 {
         transform: rotate(-45deg) translate(-9px, 6px);
         -webkit-transform: rotate(-45deg) translate(-9px, 6px);
-        -moz-transform: rotate(-45deg) translate(-9px, 6px);
         -ms-transform: rotate(-45deg) translate(-9px, 6px);
-        -o-transform: rotate(-45deg) translate(-9px, 6px);
         transform: rotate(-45deg) translate(-9px, 6px);
-        transition: all .5s;
-
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s
     }
 
     .close .bar2 {
-        opacity: 0;
+        opacity: 0
     }
 
     .close .bar3 {
         transform: rotate(45deg) translate(-8px, -8px);
         -webkit-transform: rotate(45deg) translate(-8px, -8px);
-        -moz-transform: rotate(45deg) translate(-8px, -8px);
         -ms-transform: rotate(45deg) translate(-8px, -8px);
-        -o-transform: rotate(45deg) translate(-8px, -8px);
         transform: rotate(45deg) translate(-8px, -8px);
-        transition: all .5s;
-
+        -webkit-transition: all .5s;
+        -o-transition: all .5s;
+        transition: all .5s
     }
 
     .secNav {
         height: 0;
-        margin: 0;
-
+        margin: 0
     }
 
     .secNav .navbar {
@@ -1436,457 +1514,430 @@ h1::selection {
         height: 85vh;
         z-index: 1;
         width: 100%;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: row;
         flex-direction: row;
+        -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         text-align: center;
+        -webkit-box-sizing: border-box;
         box-sizing: border-box;
         top: -100%;
+        -webkit-transition: all .4s;
+        -o-transition: all .4s;
         transition: all .4s;
-        align-content: start;
-        `
+        -ms-flex-line-pack: start;
+        align-content: start
     }
 
     .secNav .navbar.open {
         top: 60px;
-        height: 100%;
+        height: 100%
     }
 
     .secNav .navbar li {
         width: 30%;
-        margin: 15px auto;
+        margin: 15px auto
     }
 
     .secNav .navbar li a {
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
-        border-bottom: solid 1px white;
+        border-bottom: solid 1px #fff
     }
 
     .secNav .navbar li a .fas {
-        margin-bottom: -6%;
+        margin-bottom: -6%
     }
 
     .secNav .navbar li .subs {
         left: 0;
         top: 0;
+        -webkit-box-shadow: none !important;
         box-shadow: none !important;
         background: #008b8b;
         height: 100%;
-        align-content: start;
-
+        -ms-flex-line-pack: start;
+        align-content: start
     }
 
     .secNav .navbar li .subs li {
         width: 30%;
         border-bottom: none;
-        margin-left: 13px;
+        margin-left: 13px
     }
 
     .secNav .navbar li .subs li a {
         font-size: 14px;
         margin-top: 10px;
-        text-decoration: none;
+        text-decoration: none
     }
 
-
-
     .secNav .navbar li .sport {
-        display: block !important;
-
-
-
+        display: block !important
     }
 
     .secNav .navbar li .sport li {
-        float: left;
-
+        float: left
     }
-
 
     .secNav .arrowsIcons {
-        display: none;
+        display: none
     }
 
-
-
-    /* Burgering secNav Styles ENd*/
-
-    /* After Burger Search Styles Start*/
-
     .Search2 {
-
         position: absolute;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
         justify-content: center;
         height: 40px;
         right: 2.5%;
-        top: 22%;
-
+        top: 22%
     }
 
     .Search2 .searchbg2 {
-
-        background: rgba(40, 159, 187, 0.56);
-        outline: none;
+        background: rgba(40, 159, 187, .56);
+        outline: 0;
         border: none;
-        border-left: solid 2px white;
-        border-right: solid 2px white;
+        border-left: solid 2px #fff;
+        border-right: solid 2px #fff;
         padding-left: 10px;
-        color: white;
+        color: #fff;
         font-family: mtav;
-        width: 200px;
+        width: 200px
+    }
 
+    .Search2 .searchbg2::-webkit-input-placeholder {
+        color: #fff;
+        font-family: mtav
+    }
+
+    .Search2 .searchbg2::-moz-placeholder {
+        color: #fff;
+        font-family: mtav
+    }
+
+    .Search2 .searchbg2:-ms-input-placeholder {
+        color: #fff;
+        font-family: mtav
+    }
+
+    .Search2 .searchbg2::-ms-input-placeholder {
+        color: #fff;
+        font-family: mtav
     }
 
     .Search2 .searchbg2::placeholder {
-
-        /*    padding-left: 10px;*/
-        color: white;
-        font-family: mtav;
+        color: #fff;
+        font-family: mtav
     }
 
     .Search2 button i {
-
-        background: rgb(40, 159, 187);
+        background: #289fbb
     }
 
     .ser {
-
-        outline: none;
-        background: none;
+        outline: 0;
+        background: 0 0;
         border: none;
         position: absolute;
         right: 1%;
         top: 30%;
-        color: white;
-        cursor: pointer;
-
+        color: #fff;
+        cursor: pointer
     }
 
-
-    /* After Burger Search Styles End */
-    /* BURgering Styles End */
     .slider {
-        margin-top: 0px;
+        margin-top: 0
     }
 
     .firstSection {
-        padding: 0px;
+        padding: 0
     }
 
     .firstSection article {
         width: 47%;
-        margin-left: 2.2%;
+        margin-left: 2.2%
     }
 
-
     .mainHeader nav .headerMenu {
-
         width: 100%;
-        margin-top: 1.6%;
+        margin-top: 1.6%
     }
 
     .slider {
-        height: 225px;
+        height: 225px
     }
 
     .mainHeader nav .headerMenu li a {
-        font-size: 18px;
+        font-size: 18px
     }
 
     .firstSection article {
         width: 30%;
-        margin-left: 2.3%;
+        margin-left: 2.3%
     }
-
-
 }
 
 @media screen and (max-width:556px) {
-
-    /* Header Styles Start */
     .mainHeader {
         position: fixed;
         z-index: 1;
         left: 0;
         bottom: 0;
-        border-top: solid 1px white;
-
+        border-top: solid 1px #fff
     }
 
     .mainHeader nav .headerMenu {
         width: 100%;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -ms-flex-pack: distribute;
         justify-content: space-around;
-        margin-top: 2.5%;
+        margin-top: 2.5%
     }
 
     .mainHeader nav .headerMenu li {
         margin-top: -10px;
-        line-height: 28px;
+        line-height: 28px
     }
 
     .mainHeader nav .headerMenu li a {
         font-size: 19px;
         margin-left: 4px;
         margin-top: 5px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+        -ms-flex-direction: column;
         flex-direction: column;
         text-align: center
     }
 
     .mainHeader nav .headerMenu li:nth-child(2) {
-        border-top: solid 1px white;
+        border-top: solid 1px #fff;
         border-radius: 100%;
         height: 90px;
         margin-top: -30px;
         background: #1eb2d5;
-        line-height: 23px;
-
+        line-height: 23px
     }
 
     .mainHeader nav .headerMenu li:nth-child(2) a i {
         font-size: 35px;
+        -webkit-transform: rotate(5deg);
+        -ms-transform: rotate(5deg);
         transform: rotate(5deg);
         margin-top: 5px
     }
 
-
-
     .mainHeader .logo {
-        display: none;
+        display: none
     }
 
     .mainHeader .los {
-        display: none;
+        display: none
     }
 
     .mainHeader .Search {
-        display: none;
+        display: none
     }
-
-    /* Header Styles End */
-    /* BURgering Styles Start */
 
     .firstSection .sectionFooter {
-        margin-top: 3%;
+        margin-top: 3%
     }
 
-
-    /* BURgering Styles End */
     .slider {
-        margin-top: 0px;
+        margin-top: 0
     }
 
     .firstSection {
-        padding: 0px;
+        padding: 0
     }
 
     .firstSection article {
         width: 47%;
         margin-left: 2.2%;
-        margin-top: 25%;
+        margin-top: 25%
     }
-
-
-
-
-
 }
 
-
-
 @media screen and (max-width:426px) {
-
-    /* Header Styles Start */
     .mainHeader {
         position: fixed;
         z-index: 1;
         bottom: 2px;
         left: 0;
-        bottom: 0;
+        bottom: 0
     }
 
     .mainHeader nav .headerMenu {
         width: 100%;
         line-height: 10px;
+        display: -webkit-box;
+        display: -ms-flexbox;
         display: flex;
-        justify-content: space-around;
+        -ms-flex-pack: distribute;
+        justify-content: space-around
     }
 
     .mainHeader nav .headerMenu .fas:nth-child(2) {
-        line-height: 5px;
-
+        line-height: 5px
     }
 
     .mainHeader nav .headerMenu li {
-        margin-top: -4px;
+        margin-top: -4px
     }
 
     .mainHeader nav .headerMenu li a {
         font-size: 19px;
         margin-left: 4px;
-        margin-top: 5px;
-
+        margin-top: 5px
     }
 
     .mainHeader nav .headerMenu li:nth-child(2) {
-        line-height: 33px;
+        line-height: 33px
     }
 
-
     .mainHeader .logo {
-        display: none;
+        display: none
     }
 
     .mainHeader .los {
-        display: none;
+        display: none
     }
 
     .mainHeader .Search {
-        display: none;
+        display: none
     }
 
-    /* Header Styles End */
-
-
-    /* Section Styles Start */
     .firstSection {
         padding: 0 0;
-        margin: 0 auto;
+        margin: 0 auto
     }
 
     .firstSection article {
         width: 45%;
-        margin-left: 3.3%;
+        margin-left: 3.3%
     }
-
-    /* Section Styles End */
-
-    /* Slider Styles Start */
 
     .slider {
         height: 170px;
-        margin-top: 0px;
-        margin-bottom: 5px;
+        margin-top: 0;
+        margin-bottom: 5px
     }
 
     .popular_down {
-        margin-bottom: 21px;
+        margin-bottom: 21px
     }
 
-
-
     .secNav .navbar li .subs li {
-        width: 45%;
+        width: 45%
     }
 
     .firstSection article .title a {
-        font-size: 14.5px;
+        font-size: 14.5px
     }
 }
 
 @media screen and (max-width:376px) {
-
-
-
     .firstSection article .title {
         margin-top: 15%;
-        font-size: 14px;
+        font-size: 14px
     }
 
     .firstSection article .hName {
         margin-top: 4px;
-        height: 22px;
+        height: 22px
     }
 
-
-
     .firstSection article .hName h2 {
-        margin-top: -3%;
+        margin-top: -3%
     }
 
     .firstSection article .hName .productName {
-        font-size: 15px;
+        font-size: 15px
     }
 
     .firstSection article .hPrices {
-        height: 28px;
-        ;
+        height: 28px
     }
 
     .firstSection article .hPrices h5 {
-        font-size: 14px;
+        font-size: 14px
     }
 
     .firstSection article .hPrices .price {
-        opacity: 0.8;
+        opacity: .8
     }
 
     .firstSection article .time .timeLeft {
-        font-size: 13px;
+        font-size: 13px
     }
 
-    /*	HR*/
     .style-two {
-        margin-bottom: 0;
+        margin-bottom: 0
     }
 
     .firstSection article .socials {
-        margin-top: -7.5%;
+        margin-top: -7.5%
     }
 
     .firstSection article .socials a {
         line-height: 0;
         height: auto;
         padding-top: 3px;
-        margin-bottom: 7px;
+        margin-bottom: 7px
     }
 
     .firstSection article .time .far {
-        margin-top: 3px;
+        margin-top: 3px
     }
 
     .popular_up {
-        margin-bottom: 25px;
+        margin-bottom: 25px
     }
 
     .mimAq {
-        font-size: 33px;
+        font-size: 33px
     }
-
-
 }
 
 @media screen and (max-width:320px) {
-
-
     .head .fa-arrow-left {
-
-        left: calc(28% - 25px);
+        left: calc(28% - 25px)
     }
-
-
 
     .firstSection article .title {
         margin-top: 17%;
-        font-size: 13px;
+        font-size: 13px
     }
 
     .firstSection article .hName .productName {
-        font-size: 12px;
+        font-size: 12px
     }
 
     .mainHeader nav .headerMenu li:nth-child(2) {
-        line-height: 43px;
+        line-height: 43px
     }
 
     .mainHeader nav .headerMenu li {
-        margin-top: 0px;
+        margin-top: 0
     }
-
 }
 
 .hide {
-    display: none;
+    display: none
 }
