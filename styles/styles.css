@@ -338,7 +338,8 @@ html {
     top: 0;
     left: 0;
     font-family: mtav;
-    display: none
+    display: none;
+    overflow: auto;
 }
 
 .profile .profLay {

@@ -1,3 +1,20 @@
+<?php
+session_start();
+$_SESSION['user'] = null;
+const DB_NAME = 'localhost';
+const DB_USER = 'root';
+const DB_PASS = '123456';
+const DB_BASE = 'mine';
+$conn = mysqli_connect(DB_NAME,DB_USER,DB_PASS,DB_BASE);
+if(!$conn) {
+    die('DB_CONNECTION_PROB:' . mysqli_error(DB_BASE));
+}
+
+mysqli_query($conn,'set character set utf8');
+
+?>
+
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -22,13 +39,16 @@
         <nav>
             <ul class="headerMenu">
 
+
+
                 <li class="nav-item"><a href="#" class="nav-link"> მთავარი</a></li>
 
 
                 <li class="nav-item"><a href="#" class="nav-link"> აქციები</a></li>
 
 
-                <li class="nav-item regist"> <a href="#" class="nav-link">პროფილი </a></li>
+                <li class="nav-item regist"> <a class="nav-link">პროფილი </a></li>
+
 
             </ul>
         </nav>
@@ -47,7 +67,10 @@
     </header>
 
     <section class="profile">
+
         <section class="profLay">
+            <p class="closeLay">&#10006;</p>
+            <p class="prevLay">&#x2794;</p>
             <header>
                 <a href="#" class="forReg">შესვლა</a>
                 <a href="#" class="forReg">რეგისტრაცია</a>
@@ -65,7 +88,7 @@
                     <span>პაროლი</span>
                     <div class="diva"></div>
                 </div>
-                <input type="submit" placeholder="შესვლა">
+                <input type="submit" value="შესვლა">
                 <button>FACEBOOK</button>
             </form>
 
@@ -112,17 +135,19 @@
                     <span>მომხმარებლის სახელი</span>
                     <div class="diva"></div>
                 </div>
-                <label for="rules">
+                <label for="rules" class="container">
                     <input type="checkbox" id="rules" checked> მე ვეთანხმები საიტზე განთავსებულ კლიენტის ინფორმაციისა და კონფიდენციალობის დაცვის პირობებს და ინფორმაციის დაცვის პოლიტიკას
+                    <span class="checkmark"></span>
                 </label> <br><br>
 
-                <label for="emmail">
+                <label for="emmail" class="container">
                     <input type="checkbox" id="emmail" checked> მე მსურს მივიღო ფასდაკლებების შესახებ ელ. ფოსტით
+                    <span class="checkmark"></span>
                 </label>
 
 
 
-                <input type="submit" placeholder="შესვლა">
+                <input type="submit" value="რეგისტრაცია">
 
 
             </form>
@@ -967,10 +992,7 @@
         AOS.init();
 
     </script>
-    <script>
-        FbPlayableAd.onCTAClick()
 
-    </script>
 </body>
 
 </html>
