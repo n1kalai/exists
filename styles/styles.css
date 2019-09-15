@@ -8,6 +8,23 @@
     src: url(../fonts/bpg_dejavu_sans.ttf)
 }
 
+@font-face {
+    font-family: deja;
+    src: url(../fonts/bpg_dejavu_sans.ttf)
+}
+
+@font-face {
+  font-family: "BPGExtraSquare";
+  src: url("../fonts/bpgextrasquare2009.eot"); /* IE9 Compat Modes */
+  src: url("../fonts/bpgextrasquare2009.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/bpgextrasquare2009.otf") format("opentype"), /* Open Type Font */
+    url("../fonts/bpgextrasquare2009.svg") format("svg"), /* Legacy iOS */
+    url("../fonts/bpgextrasquare2009.ttf") format("truetype"), /* Safari, Android, iOS */
+    url("../fonts/bpgextrasquare2009.woff") format("woff"), /* Modern Browsers */
+    url("../fonts/bpgextrasquare2009.woff2") format("woff2"); /* Modern Browsers */
+  font-weight: normal;
+  font-style: normal;
+}
 body,
 html {
     padding: 0;
@@ -1221,7 +1238,8 @@ h1 {
 
 .firstSection article .hPrices .price {
     opacity: .8;
-    font-size: 18px
+    font-size: 18px;
+    font-family: BPGExtraSquare;
 }
 
 .firstSection article .hPrices .oldPrice {
