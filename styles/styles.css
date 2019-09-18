@@ -41,6 +41,23 @@ h1 {
     text-align: center;
 }
 
+
+h2 {
+    cursor: default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    text-align: center;
+    font-family: mtav;
+    letter-spacing: 2px;
+    font-size: 40px;
+    color: #008b8b;
+    margin-bottom: 0;
+    float: left;
+}
+
 body,
 html {
     padding: 0;
@@ -927,21 +944,6 @@ html {
     left: 0;
 }
 
-h2 {
-    cursor: default;
-    -webkit-user-select: none;
-    -moz-user-select: none;
-    -ms-user-select: none;
-    user-select: none;
-    width: 100%;
-    text-align: center;
-    font-family: mtav;
-    letter-spacing: 2px;
-    font-size: 40px;
-    color: #008b8b;
-    margin-bottom: 0;
-    float: left;
-}
 
 .bar2 {
     border-radius: 100%
@@ -1108,7 +1110,8 @@ h2 {
     width: 100%;
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
-    align-items: baseline
+    align-items: baseline;
+    margin-top: 150px;
 }
 
 .firstSection article {
@@ -1116,8 +1119,9 @@ h2 {
     border-radius: 10px;
     background: #fff;
     position: relative;
-    margin-top: 7.5%;
-    padding-top: 60px
+    padding-top: 50px;
+    padding-bottom: 20px;
+
 }
 
 .firstSection article figure {
@@ -1126,7 +1130,7 @@ h2 {
     max-height: 75%;
     border-radius: 10px 10px 0 0;
     position: absolute;
-    bottom: 66%;
+    margin: 0;
     margin-left: 4.7%;
     overflow: hidden
 }
@@ -1140,7 +1144,7 @@ h2 {
     transition: all .4s
 }
 
-.firstSection article img:hover {
+.firstSection article figure img:hover {
     -webkit-transform: scale(1.1);
     -ms-transform: scale(1.1);
     transform: scale(1.1)
@@ -1159,7 +1163,7 @@ h2 {
     margin-top: 0;
     margin-bottom: 5px;
     font-family: mtav;
-    font-size: 18px;
+    font-size: 16px;
     border-radius: 0 0 6px 6px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
