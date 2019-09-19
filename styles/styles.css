@@ -707,7 +707,7 @@ html {
     position: absolute;
     left: 0;
     top: 0;
-    width: 60%;
+    width: 50%;
     height: 100%;
     background: rgba(255, 255, 255, 0.26);
     transition: all .4s;
@@ -732,6 +732,9 @@ html {
     width: 80%;
     color: white;
     font-family: deja;
+    background: rgba(0, 0, 0, 0.4);
+    padding: 5px;
+    margin-left: -5px;
 }
 
 .mainDiv .inner .buttons {
@@ -758,7 +761,7 @@ html {
 .mainDiv .inner .nexter {
     position: absolute;
     top: 0;
-    left: 60%;
+    left: 50%;
     cursor: ew-resize;
     transition: all .4s;
     height: 100%;

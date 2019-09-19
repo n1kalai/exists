@@ -55,7 +55,7 @@ ul.bxslider {
 
     height: 100%;
 
-    right: 0;
+    right: 10px;
 
     text-align: center;
 
@@ -108,7 +108,7 @@ ul.bxslider {
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
 .bx-wrapper .bx-pager.bx-default-pager a.active,
 .bx-wrapper .bx-pager.bx-default-pager a:focus {
-    background: transparent;
+    background: lightgrey;
     height: 15px;
     width: 15px;
 }
