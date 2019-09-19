@@ -4,10 +4,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!--    Font Awesome-->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    <!--     Aos-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <title>Document</title>
+
+    <!--    JQuery Link-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+    <!--    BXslider CSS-->
+    <link rel="stylesheet" href="styles/jquery.bxslider.css">
+
+    <!--    this.styles-->
     <link rel="stylesheet" href="styles/styles.css">
+
+    <title>Document</title>
+    <!--    Bx Slider Js-->
+    <script src="javascript/jquery.bxslider.js"></script>
+
+
+    <script>
+        $(document).ready(function() {
+            $('.mainDiv').bxSlider();
+        });
+
+    </script>
 
 </head>
 
@@ -162,10 +183,47 @@
 
     </section>
     <!-- Slider start -->
-    <div id="slider">
+    <section class="mainDiv">
+        <article class="inner">
+            <img src="https://media11.s-nbcnews.com/i/MSNBC/Components/Video/201906/d_mach_flyingv_190605.jpg" alt="">
+            <article class="sideBar">
 
-        <figure class="slider"><img src="img/sliderImages/bech2.jpg" alt=""></figure>
-    </div>
+                <h2>სათაური</h2>
+                <p>ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე.</p>
+                <div class="buttons">
+                    <button type="submit"> სრულად </button>
+                </div>
+
+            </article>
+            <button class="nexter"> &Xi; </button>
+        </article>
+        <article class="inner">
+            <img src="https://i.ytimg.com/vi/UJ6GmaZVFkU/maxresdefault.jpg" alt="">
+            <article class="sideBar">
+                <h2>სათაური</h2>
+                <p>ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე.</p>
+                <div class="buttons">
+                    <button type="submit"> სრულად </button>
+                </div>
+
+            </article>
+            <button class="nexter"> &Xi; </button>
+        </article>
+        <article class="inner">
+            <img src="https://www.rd.com/wp-content/uploads/2018/09/airplane.jpg" alt="">
+            <article class="sideBar">
+                <h2>სათაური</h2>
+                <p>ცნობილი ფაქტია, რომ გვერდის წაკითხვად შიგთავსს შეუძლია მკითხველის ყურადღება მიიზიდოს და დიზაინის აღქმაში ხელი შეუშალოს. Lorem Ipsum-ის გამოყენებით ვღებულობთ იმაზე მეტ-ნაკლებად სწორი გადანაწილების ტექსტს, ვიდრე ერთიდაიგივე გამეორებადი სიტყვებია ხოლმე.</p>
+                <div class="buttons">
+                    <button type="submit"> სრულად </button>
+                </div>
+
+            </article>
+            <button class="nexter"> &Xi; </button>
+        </article>
+
+
+    </section>
 
     <!-- Meore Navbar Meniu, Kategoriebis -->
 
@@ -970,7 +1028,7 @@
     </section>
 
 
-
+    <script src="javascript/script.js"></script>
     <script src="javascript/burger.js" async></script>
     <script src="javascript/timer.js"></script>
     <script src="javascript/listing.js"></script>

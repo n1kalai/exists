@@ -134,7 +134,7 @@ html {
     flex-direction: row;
     align-items: center;
     height: 70px;
-    margin-top: 10px;
+    margin: 10px 0;
 }
 
 .mainHeader .regist {
@@ -677,26 +677,110 @@ html {
     transform: rotate(45deg)
 }
 
-#slider {
-    float: left;
-    margin: 0;
-    margin-bottom: 10px;
+/*Slider Styles Start*/
+
+.mainDiv {
+    width: auto;
+    height: 372px;
+    background: #3c3c84;
+    position: relative;
+}
+
+
+.mainDiv .inner {
+    position: absolute;
     width: 100%;
-    margin-top: 10px;
-    max-height: 300px;
-    overflow: hidden;
+    height: 100%;
+
+    position: relative;
+
+
 }
 
-#slider .slider {
-    margin: 0;
-}
-
-#slider .slider img {
+.mainDiv .inner img {
     width: 100%;
     height: 100%;
     object-fit: cover;
 }
 
+.mainDiv .inner .sideBar {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 60%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.26);
+    transition: all .4s;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding-left: 50px;
+    box-sizing: border-box;
+}
+
+.mainDiv .inner h2 {
+
+    padding: 0;
+    width: 50%;
+    text-align: left;
+    color: white;
+    font-family: mtav;
+}
+
+.mainDiv .inner p {
+
+    width: 80%;
+    color: white;
+    font-family: deja;
+}
+
+.mainDiv .inner .buttons {
+
+    color: white;
+    border: none;
+    width: 100px;
+
+
+}
+
+.mainDiv .inner .buttons button {
+    cursor: pointer;
+    background: transparent;
+    border: solid 1.5px white;
+    padding: 5px 10px;
+    color: white;
+    font-family: mtav;
+    font-size: 16px;
+
+}
+
+
+.mainDiv .inner .nexter {
+    position: absolute;
+    top: 0;
+    left: 60%;
+    cursor: ew-resize;
+    transition: all .4s;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.64);
+    border: none;
+    font-size: 20px;
+    color: white;
+}
+
+.left {
+    left: -60% !important;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fromleft {
+    left: 0 !important;
+    font-size: 20px;
+    color: black !important;
+}
+
+/* Slider Styles End*/
 .secNav {
     float: left;
     background: #1eb2d5;
@@ -708,7 +792,7 @@ html {
     align-items: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin: 0 0 15px 0;
+    margin: 10px 0 15px 0;
     position: relative;
     width: 100%;
 }
