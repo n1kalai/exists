@@ -102,7 +102,7 @@ ul.bxslider {
     border: solid 2px rgba(30, 178, 213, 0.76);
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
-    border-radius: 1px;
+    border-radius: 10px;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
