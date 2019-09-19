@@ -103,6 +103,7 @@ ul.bxslider {
     -moz-border-radius: 1px;
     -webkit-border-radius: 1px;
     border-radius: 10px;
+    transition: all .8s;
 }
 
 .bx-wrapper .bx-pager.bx-default-pager a:hover,
@@ -111,6 +112,7 @@ ul.bxslider {
     background: lightgrey;
     height: 15px;
     width: 15px;
+    transition: all .8s;
 }
 
 .bx-wrapper .bx-pager-item,
@@ -125,6 +127,7 @@ ul.bxslider {
     font-size: 0;
     line-height: 0;
     margin-bottom: 15px;
+
 }
 
 /* DIRECTION CONTROLS (NEXT / PREV) */
