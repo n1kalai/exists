@@ -134,7 +134,7 @@ html {
     flex-direction: row;
     align-items: center;
     height: 70px;
-    margin: 10px 0;
+
 }
 
 .mainHeader .regist {
@@ -724,6 +724,7 @@ html {
     text-align: left;
     color: white;
     font-family: mtav;
+    margin-top: 0;
 }
 
 .mainDiv .inner p {
@@ -764,7 +765,7 @@ html {
     cursor: ew-resize;
     transition: all .4s;
     height: 100%;
-    background: rgba(255, 255, 255, 0.64);
+    background: rgba(0, 0, 0, 0.64);
     border: none;
     font-size: 20px;
     color: white;
@@ -794,7 +795,7 @@ html {
     align-items: center;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    margin: 10px 0 15px 0;
+
     position: relative;
     width: 100%;
 }
