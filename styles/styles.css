@@ -751,22 +751,25 @@ html {
 .mainDiv .inner .buttons a {
     cursor: pointer;
     background: transparent;
-    border: outset 2px white;
+    border: solid 2px white;
     padding: 5px 10px;
     color: white;
     font-family: mtav;
     font-size: 16px;
     text-decoration: none;
+    transition: color .8s, background .7s, border 0s, padding 0s;
+
+    /*    transition: border 0s;*/
     border-radius: 2px;
+    box-sizing: border-box;
 
 }
 
 .mainDiv .inner .buttons a:hover {
-    background: grey;
-    color: white;
+    background: white;
+    color: grey;
 
-    border: none;
-    transition: all .8s;
+
 }
 
 
