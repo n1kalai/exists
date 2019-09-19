@@ -680,9 +680,8 @@ html {
 /*Slider Styles Start*/
 
 .mainDiv {
-    width: auto;
     height: 372px;
-    background: #3c3c84;
+    max-height: 372px;
     position: relative;
 }
 
@@ -709,7 +708,7 @@ html {
     top: 0;
     width: 50%;
     height: 100%;
-    background: rgba(255, 255, 255, 0.26);
+    background: rgba(0, 0, 0, 0.4);
     transition: all .4s;
     display: flex;
     flex-direction: column;
@@ -732,7 +731,7 @@ html {
     width: 80%;
     color: white;
     font-family: deja;
-    background: rgba(0, 0, 0, 0.4);
+
     padding: 5px;
     margin-left: -5px;
 }
