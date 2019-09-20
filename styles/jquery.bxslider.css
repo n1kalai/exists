@@ -112,7 +112,7 @@ ul.bxslider {
     background: lightgrey;
     height: 15px;
     width: 15px;
-    transition: all .8s;
+    transition: all .2s;
 }
 
 .bx-wrapper .bx-pager-item,

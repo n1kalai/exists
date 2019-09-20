@@ -703,6 +703,7 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    pointer-events: none;
 
 }
 
@@ -799,7 +800,7 @@ html {
 .fromleft {
     left: 0 !important;
     font-size: 20px;
-    color: black !important;
+    color: #1eb2d5 !important;
 }
 
 /* Slider Styles End*/
