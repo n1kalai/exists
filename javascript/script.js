@@ -1,13 +1,11 @@
 let $mainDiv = document.querySelector('.mainDiv');
 let $button = document.querySelectorAll('.nexter');
-let $images = document.querySelectorAll('.inner > IMG');
+
 
 
 
 //window.onload = fromLeft()
-if ($button[0].onclick) {
-    console.log('clicked')
-}
+
 
 for (var i = 0; i < $button.length; i++) {
 
@@ -25,18 +23,9 @@ for (var i = 0; i < $button.length; i++) {
             this.innerHTML = '&#9776;'
         } else {
             this.innerHTML = '&#10006;'
+            this.style.cursor = "crosshair";
         }
 
 
     }
-}
-
-
-for (var j = 0; j < $images.length; j++) {
-    $images[j].addEventListener('mouseover', function (e) {
-        if (e.target) {
-            e.preventDefault();
-            this.style.pointerEvents = 'auto';
-        }
-    })
 }
