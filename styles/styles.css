@@ -782,7 +782,7 @@ html {
     position: absolute;
     top: 0;
     left: 50%;
-    cursor: ew-resize;
+    cursor: crosshair;
     transition: all .4s;
     height: 100%;
     background: rgba(0, 0, 0, 0.64);
