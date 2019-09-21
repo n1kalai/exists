@@ -696,6 +696,8 @@ html {
 
 }
 
+
+
 .mainDiv .inner img {
     width: 100%;
     height: 100%;
@@ -703,7 +705,8 @@ html {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    pointer-events: none;
+    position: absolute;
+    z-index: -1;
 
 }
 
@@ -714,13 +717,21 @@ html {
     width: 50%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    transition: all .4s;
+    transition: left 4s, opacity 0s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     padding-left: 50px;
     box-sizing: border-box;
 }
+
+.mainDiv .outer .sideBar {
+    left: -100% !important;
+    pointer-events: none;
+    color: #1eb2d5 !important;
+}
+
+
 
 .mainDiv .inner h2 {
 
@@ -791,6 +802,10 @@ html {
     color: white;
 }
 
+.mainDiv .outer .nexter {
+    left: 0 !important;
+}
+
 .left {
     left: -60% !important;
     opacity: 0;
@@ -801,6 +816,10 @@ html {
     left: 0 !important;
     font-size: 20px;
     color: #1eb2d5 !important;
+}
+
+.default {
+    pointer-events: auto;
 }
 
 /* Slider Styles End*/
