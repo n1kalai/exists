@@ -15,16 +15,21 @@ for (var i = 0; i < $button.length; i++) {
 
 
     function goLeft(e) {
-        console.log(e)
-        e.preventDefault();
-        console.log(e)
+
         let $article = this.previousElementSibling;
+        if (false) {
+            //  bla bla
+            console.log('f')
+
+        } else {
+            $article.classList.toggle('left');
+            console.log(this)
+        }
 
         $article.classList.toggle('left');
-        this.classList.toggle('fromleft')
-        if (this.classList.contains('fromleft')) {
-            this.innerHTML = '&#9776;'
-        }
+        this.innerHTML = "&#9776;"
+
+
 
 
     }

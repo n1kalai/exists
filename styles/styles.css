@@ -33,6 +33,10 @@
     font-style: normal;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 h1 {
     margin: 0;
     padding: 0;
@@ -717,7 +721,7 @@ html {
     width: 50%;
     height: 100%;
     background: rgba(0, 0, 0, 0.4);
-    transition: left 4s, opacity 0s;
+    transition: left .3s ease, opacity 0s;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -728,6 +732,7 @@ html {
 .mainDiv .outer .sideBar {
     left: -100% !important;
     pointer-events: none;
+    opacity: 0;
     color: #1eb2d5 !important;
 }
 
@@ -794,7 +799,7 @@ html {
     top: 0;
     left: 50%;
     cursor: crosshair;
-    transition: all .4s;
+    transition: left .3s ease;
     height: 100%;
     background: rgba(0, 0, 0, 0.64);
     border: none;
@@ -816,6 +821,7 @@ html {
     left: 0 !important;
     font-size: 20px;
     color: #1eb2d5 !important;
+    opacity: 1 !important;
 }
 
 .default {
