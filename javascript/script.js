@@ -19,17 +19,20 @@ for (var i = 0; i < $button.length; i++) {
         let $article = this.previousElementSibling;
         if (false) {
             //  bla bla
-            console.log('f')
-
         } else {
             $article.classList.toggle('left');
-            console.log(this)
+
         }
 
         $article.classList.toggle('left');
-        this.innerHTML = "&#9776;"
 
 
+        if (this.style.left >= '0 !important') {
+            this.innerHTML = '&#10006;';
+
+        } else {
+            this.innerHTML = '&#9776;';
+        }
 
 
     }

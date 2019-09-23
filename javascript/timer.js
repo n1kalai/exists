@@ -15,10 +15,10 @@ var interval2 = setInterval(function (event) {
 }, 100 * 60 * 60)
 
 
-let $figure = document.querySelectorAll('.imagesforSlide');
-let $article = document.querySelector('.sectionFooter > article');
-
-for (var i = 0; i < $figure.length; i++) {
-    $figure[i].style.bottom = $article.scrollHeight - 53 + "px";
-
-}
+//let $figure = document.querySelectorAll('.imagesforSlide');
+//let $article = document.querySelector('.sectionFooter > article');
+//
+//for (var i = 0; i < $figure.length; i++) {
+//    $figure[i].style.bottom = $article.scrollHeight - 53 + "px";
+//
+//}

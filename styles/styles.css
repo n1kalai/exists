@@ -1244,33 +1244,32 @@ html {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
-    margin-top: 150px;
+    margin-top: 30px;
 }
 
-.firstSection article {
+.firstSection .sectionFooter article {
     width: 15%;
     border-radius: 10px;
     background: #fff;
     position: relative;
-    padding-top: 50px;
-    padding-bottom: 20px;
+    padding: 10px 8px 15px 8px;
 
 }
 
-.firstSection article figure {
-    position: relative;
-    width: 91%;
+/*figure*/
+.firstSection .sectionFooter article .imagesforSlide {
+
+    width: 100%;
     max-height: 75%;
     border-radius: 10px 10px 0 0;
-    position: absolute;
+    overflow: hidden;
     margin: 0;
-    margin-left: 4.7%;
-    overflow: hidden
 }
 
-.firstSection article img {
+.firstSection .sectionFooter article .imagesforSlide img {
     width: 100%;
     height: 100%;
+    object-fit: cover;
     border-radius: 10px 10px 0 0;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
@@ -1289,14 +1288,13 @@ html {
 }
 
 .firstSection article .title {
-    width: 91%;
+    width: 100%;
     text-align: center;
-    background: #cecece;
-    margin-left: 4.7%;
-    margin-top: 0;
-    margin-bottom: 5px;
-    font-family: mtav;
-    font-size: 16px;
+    background: transparent;
+
+    margin: 10px 0 20px 0;
+    font-family: BPGExtraSquare;
+    font-size: 12px;
     border-radius: 0 0 6px 6px;
     -webkit-box-sizing: border-box;
     box-sizing: border-box
@@ -1304,17 +1302,11 @@ html {
 
 .firstSection article .title a {
     text-decoration: none;
-    color: #000
+    color: #707070;
 }
 
 .firstSection article .hName {
-    width: 90%;
-    margin-left: 5.5%;
-    margin-top: 10px;
-    height: 35px;
-    padding: 0 5px;
-    -webkit-box-sizing: border-box;
-    box-sizing: border-box;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1372,18 +1364,20 @@ html {
 }
 
 .firstSection article .hPrices {
-    width: 90%;
-    height: 30px;
-    margin-left: 5.5%;
+    width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    padding: 0 5px;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
-    justify-content: space-between;
+    justify-content: space-around;
     -webkit-box-sizing: border-box;
-    box-sizing: border-box
+    box-sizing: border-box;
+}
+
+.firstSection article .hPrices h5 {
+    margin: 0;
+    padding: 0;
 }
 
 .firstSection article .hPrices .changedPrice {
@@ -1391,97 +1385,81 @@ html {
 }
 
 .firstSection article .hPrices h5 {
-    font-size: 20px;
-    width: 27%;
-    line-height: 20px;
-    margin-top: 0
+
+    font-family: BPGextraSquare
 }
 
-.firstSection article .hPrices .price {
-    opacity: .8;
+.firstSection article .hPrices .newPrice {
+    margin-bottom: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    font-size: 40px;
+    align-items: center;
+
+}
+
+.firstSection article .hPrices .newPrice span {
     font-size: 18px;
-    font-family: BPGExtraSquare;
+    padding-left: 10px;
+    box-sizing: border-box;
+}
+
+.firstSection article .hPrices .oldPrice span {
+    font-size: 18px;
+    padding-left: 10px;
+    box-sizing: border-box;
 }
 
 .firstSection article .hPrices .oldPrice {
-    opacity: .52;
-    color: #000
-}
-
-.firstSection article .hPrices p {
-    width: 10%;
-    font-size: 20px;
-    text-align: center;
-    margin-top: 0
-}
-
-.firstSection article .oldPrice {
-    width: 27%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 18px;
+    color: #707070;
     text-decoration: line-through;
-    color: red
 }
 
-.firstSection article .emoji {
-    width: 10%
-}
-
-
-.firstSection article .newPrice {
-    width: 27%;
-    text-align: right;
-    color: #5dade2
-}
 
 .firstSection article .time {
-    width: 97%;
-    margin-left: 1.7%;
-    font-weight: 700;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    margin-top: 5px;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    color: #000;
-    -webkit-box-align: end;
-    -ms-flex-align: end;
-    align-items: flex-end;
-    font-size: 18px;
-    font-family: mtav
-}
-
-.firstSection article .time .far {
-    font-size: 20px;
-    margin-top: 5px;
-    color: #008b8b
-}
-
-.firstSection article .time .span1 {
-    font-size: 28px;
-    color: #5dade2;
-    margin-right: 3px
-}
-
-.firstSection article .time .span2 {
-    opacity: .52
-}
-
-.firstSection article .socials {
-    position: relative;
-    -ms-flex-item-align: start;
-    align-self: flex-start;
-    bottom: -18px;
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    color: #05858F;
+    ;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    font-size: 12px;
+    font-family: BPGExtraSquare;
+    margin: 17px 0 20px 0;
+}
+
+
+.firstSection article .time .span1 {
+    font-size: 14px;
+    color: #05858F;
+
+}
+
+.firstSection article .time .span2 {
+    padding-left: 5px;
+}
+
+.firstSection article .socials {
+
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
     -ms-flex-pack: distribute;
-    justify-content: space-around;
-    margin-top: -2.5%;
-    left: 0;
-    margin-left: 0;
-    margin-right: 0
+    margin: 0;
 }
 
 .firstSection article .socials a {
@@ -1489,10 +1467,9 @@ html {
     background: #fff;
     border-right: solid 1px #008b8b;
     width: 40%;
-    height: 35px;
     text-align: center;
-    line-height: 45px;
-    margin-bottom: 10px
+    line-height: 25px;
+
 }
 
 .firstSection article .socials a:last-child {
@@ -2054,9 +2031,7 @@ html {
         font-size: 14px
     }
 
-    .firstSection article .hPrices .price {
-        opacity: .8
-    }
+
 
     .firstSection article .time .timeLeft {
         font-size: 13px
