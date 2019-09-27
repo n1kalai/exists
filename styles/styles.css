@@ -1438,7 +1438,8 @@ html {
 
 .firstSection article .hPrices h5 {
 
-    font-family: BPGextraSquare
+    font-family: BPGextraSquare;
+
 }
 
 .firstSection article .hPrices .newPrice {
@@ -1448,6 +1449,7 @@ html {
     justify-content: space-around;
     font-size: 40px;
     align-items: center;
+    pointer-events: none;
 
 }
 
@@ -1469,9 +1471,20 @@ html {
     align-items: center;
     font-size: 18px;
     color: #707070;
-    text-decoration: line-through;
+    position: relative;
+    pointer-events: none;
+
 }
 
+.firstSection article .hPrices .oldPrice::after {
+    position: absolute;
+    content: "";
+    width: 108%;
+    left: -4%;
+    height: 1px;
+    background: #707070;
+    bottom: calc(50% - 1px);
+}
 
 .firstSection article .time {
     width: 100%;
@@ -1489,6 +1502,7 @@ html {
     font-size: 12px;
     font-family: BPGExtraSquare;
     margin: 17px 0 20px 0;
+    pointer-events: none;
 }
 
 
