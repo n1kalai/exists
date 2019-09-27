@@ -1398,9 +1398,9 @@ html {
     width: 5px;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a:hover,
-.bx-wrapper .bx-pager.bx-default-pager a.active,
-.bx-wrapper .bx-pager.bx-default-pager a:focus {
+.firstSection .sectionFooter article .bx-wrapper .bx-pager.bx-default-pager a:hover,
+.firstSection .sectionFooter article .bx-wrapper .bx-pager.bx-default-pager a.active,
+.firstSection .sectionFooter article .bx-wrapper .bx-pager.bx-default-pager a:focus {
     background: lightgrey;
     height: 5px;
     width: 15px;
