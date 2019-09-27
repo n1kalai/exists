@@ -1393,7 +1393,7 @@ html {
     justify-content: center;
 }
 
-.bx-wrapper .bx-pager.bx-default-pager a {
+.firstSection .sectionFooter article .bx-wrapper .bx-pager.bx-default-pager a {
     height: 5px;
     width: 5px;
 }
