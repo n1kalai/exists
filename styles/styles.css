@@ -53,20 +53,23 @@ h2 {
     -ms-user-select: none;
     user-select: none;
     width: 100%;
-    text-align: center;
+    text-align: left;
     font-family: mtav;
     letter-spacing: 2px;
-    font-size: 40px;
+    font-size: 30px;
     color: #008b8b;
     margin-bottom: 0;
     float: left;
+    box-sizing: border-box;
+    padding-left: 15px;
+
 }
 
 body,
 html {
     padding: 0;
     margin: 0;
-    background: #eeebeb;
+    background: #f6f6f6;
     width: 100%
 }
 
@@ -1249,16 +1252,19 @@ html {
 
 .firstSection .sectionFooter article {
     width: 15%;
-    border-radius: 10px;
+    border-radius: 8px;
     background: #fff;
     position: relative;
+    -webkit-transition: box-shadow .4s;
+    -o-transition: box-shadow .4s;
+    transition: box-shadow .4s;
     padding: 10px 8px 15px 8px;
 
 }
 
 /*figure*/
 .firstSection .sectionFooter article .imagesforSlide {
-
+    height: 75%;
     width: 100%;
     max-height: 75%;
     border-radius: 10px 10px 0 0;
@@ -1283,8 +1289,8 @@ html {
 }
 
 .firstSection article:hover {
-    -webkit-box-shadow: 0 0 5px #000;
-    box-shadow: 0 0 5px #000
+    -webkit-box-shadow: 0 0 15px grey;
+    box-shadow: 0 0 25px grey
 }
 
 .firstSection article .title {
