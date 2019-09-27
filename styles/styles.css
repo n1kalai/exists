@@ -1146,8 +1146,7 @@ html {
     width: 98%;
     padding: 0 10px;
     padding-top: 5px;
-    min-height: 500px;
-    margin-bottom: 40px;
+    min-height: 450px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -1249,7 +1248,7 @@ html {
     -webkit-box-align: baseline;
     -ms-flex-align: baseline;
     align-items: baseline;
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .firstSection .sectionFooter article {
@@ -1387,6 +1386,25 @@ html {
 .firstSection article .hPrices h5 {
     margin: 0;
     padding: 0;
+}
+
+.firstSection .sectionFooter article .bx-wrapper .bx-pager {
+    width: 100%;
+    justify-content: center;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a {
+    height: 5px;
+    width: 5px;
+}
+
+.bx-wrapper .bx-pager.bx-default-pager a:hover,
+.bx-wrapper .bx-pager.bx-default-pager a.active,
+.bx-wrapper .bx-pager.bx-default-pager a:focus {
+    background: lightgrey;
+    height: 5px;
+    width: 15px;
+    transition: all .2s;
 }
 
 .firstSection .sectionFooter article .bx-wrapper .bx-viewport {
