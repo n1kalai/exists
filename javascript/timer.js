@@ -14,11 +14,11 @@ var interval2 = setInterval(function (event) {
     console.log(hours)
 }, 100 * 60 * 60)
 
-
+//
 //let $figure = document.querySelectorAll('.imagesforSlide');
 //let $article = document.querySelector('.sectionFooter > article');
 //
 //for (var i = 0; i < $figure.length; i++) {
-//    $figure[i].style.bottom = $article.scrollHeight - 53 + "px";
+//    $figure[i].style.bottom = $article.scrollHeight + "px";
 //
 //}

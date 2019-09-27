@@ -1185,6 +1185,8 @@ html {
     color: #008b8b
 }
 
+
+
 .firstSection nav .detailed_list li {
     border-right: solid 1px #1eb2d5;
     -webkit-transition: all .4s;
@@ -1264,9 +1266,9 @@ html {
 
 /*figure*/
 .firstSection .sectionFooter article .imagesforSlide {
-    height: 75%;
+    height: 100%;
     width: 100%;
-    max-height: 75%;
+    max-height: 100%;
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     margin: 0;
@@ -1279,7 +1281,8 @@ html {
     border-radius: 10px 10px 0 0;
     -webkit-transition: all .4s;
     -o-transition: all .4s;
-    transition: all .4s
+    transition: all .4s;
+    pointer-events: none;
 }
 
 .firstSection article figure img:hover {
@@ -1384,6 +1387,31 @@ html {
 .firstSection article .hPrices h5 {
     margin: 0;
     padding: 0;
+}
+
+.firstSection .sectionFooter article .bx-wrapper .bx-viewport {
+    height: 150px;
+    max-height: 150px;
+}
+
+.firstSection .sectionFooter article .bx-wrapper .bx-controls-direction {
+    display: block;
+}
+
+.firstSection .sectionFooter article .bx-wrapper .bx-controls-direction a {
+    display: block;
+    right: 10px;
+    background: url('../img/controls.png') no-repeat -0px -32px;
+    /*    background: white;*/
+
+}
+
+.firstSection .sectionFooter article .bx-wrapper .bx-controls-direction a:nth-child(2) {
+    display: block;
+    right: 10px;
+    background: url('../img/controls.png') no-repeat -43px -32px;
+    /*    background: white;*/
+
 }
 
 .firstSection article .hPrices .changedPrice {
