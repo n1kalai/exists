@@ -10,8 +10,12 @@ for (var i = 0; i < $art.length; i++) {
 }
 
 function leeft(event) {
-    event.stopPropagation();
-    this.classList.toggle('outer');
+    if (event.target == this || event.target == this.lastElementChild) {
+        console.log(this.lastElementChild)
+        this.classList.toggle('outer');
 
+    } else {
+        event.stopPropagation();
+    }
 
 }

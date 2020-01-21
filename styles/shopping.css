@@ -2,6 +2,12 @@ input {
     display: none;
 }
 
+.newsArt {
+    width: 210px;
+    max-width: 210px;
+    margin-bottom: 15px;
+}
+
 input:checked + a {
     text-shadow: 2px -2px 5px white,
         2px 2px 15px black,
@@ -82,10 +88,10 @@ html {
     background: #f6f6f6;
 }
 
-body
-{
+body {
     overflow-x: hidden;
 }
+
 /* Header + Nav Styles Start */
 #mainHeader {
     background: #1eb2d5;
@@ -244,7 +250,7 @@ u {
 
 .secNav .arrowsIcons:nth-child(1) {
 
-    
+
     animation: anime ease-in-out 2s infinite;
 }
 
@@ -329,10 +335,14 @@ u {
 .secNav .navbar::-webkit-scrollbar {
     height: 3px;
     background: #5ae875;
-}.secNav .navbar::-o-scrollbar {
+}
+
+.secNav .navbar::-o-scrollbar {
     height: 3px;
     background: #5ae875;
-}.secNav .navbar::-ms-scrollbar {
+}
+
+.secNav .navbar::-ms-scrollbar {
     height: 3px;
     background: #5ae875;
 }
@@ -344,6 +354,7 @@ u {
 .secNav .navbar::-o-scrollbar-track {
     background: transparent;
 }
+
 .secNav .navbar::-ms-scrollbar-track {
     background: transparent;
 }
@@ -354,12 +365,16 @@ u {
     background: #008b8b;
     cursor: pointer;
 
-}.secNav .navbar::-o-scrollbar-thumb {
+}
+
+.secNav .navbar::-o-scrollbar-thumb {
     border-radius: 4px;
     background: #008b8b;
     cursor: pointer;
 
-}.secNav .navbar::-ms-scrollbar-thumb {
+}
+
+.secNav .navbar::-ms-scrollbar-thumb {
     border-radius: 4px;
     background: #008b8b;
     cursor: pointer;
@@ -371,9 +386,12 @@ u {
 /* Technic SubMenus Styles Start */
 
 
-.secNav .navbar li .subs {-webkit-transition: all 1s; }
 .secNav .navbar li .subs {
-    
+    -webkit-transition: all 1s;
+}
+
+.secNav .navbar li .subs {
+
     list-style: none;
     position: absolute;
     z-index: 1;
@@ -386,22 +404,22 @@ u {
     margin-top: -1%;
     padding-left: 20px;
     display: flex;
-    -webkit-transition: all .5s; 
-    -moz-transition: all .5s; 
-    -o-transition: all .5s; 
-    -ms-transition: all .5s; 
+    -webkit-transition: all .5s;
+    -moz-transition: all .5s;
+    -o-transition: all .5s;
+    -ms-transition: all .5s;
     perspective: 400px;
     transform: rotateX(90deg);
     padding-bottom: 15px;
- 
-    
+
+
 }
 
 
 .secNav li .subs li a {
     text-decoration: underline lightgrey;
     font-size: 18px;
-    
+
 }
 
 
@@ -412,11 +430,11 @@ u {
     -o-transition: all .5s;
     -ms-transition: all .5s;
     -webkit-transition: all .5s;
-    
+
     transform: rotateX(0deg);
     box-shadow: 0 50px 70px #4bd1d1;
-   
-   
+
+
 
 }
 
@@ -424,17 +442,18 @@ u {
 
 .secNav .navbar li .subs li {
     width: 23.5%;
-    text-align: center;;
+    text-align: center;
+    ;
     margin-left: 15px;
     border-bottom: solid 1px lightgrey;
-  
+
 }
 
 .secNav .navbar li .subs li a {
     color: white;
-    
 
-    
+
+
 
 
 }
@@ -442,17 +461,21 @@ u {
 .secNav .navbar li .subs li a:hover {
     color: #1eb2d5;
 
-      
+
 }
 
 /* Technic SubMenus Styles End */
 
 /* Furniture Submenu Styles Start */
 
-.secNav .navbar li .furniture {margin-left: -15.8%;}
+.secNav .navbar li .furniture {
+    margin-left: -15.8%;
+}
 
 /* Sport Submenu Styles Start */
-.secNav .navbar li .sport {margin-left: -58.15%;}
+.secNav .navbar li .sport {
+    margin-left: -58.15%;
+}
 
 
 /* Second Navbar END */
@@ -462,7 +485,7 @@ main {
     min-height: 200px;
     display: flex;
     align-items: flex-start;
-    justify-content: center;
+    justify-content: space-between;
 }
 
 /* left SIde NavMenu styles start*/
@@ -486,6 +509,7 @@ main #leftMenu form #form {
     align-items: center;
     margin-bottom: 0px;
 }
+
 main #leftMenu form #form li {
     list-style: none;
     padding: 5px;
@@ -494,27 +518,6 @@ main #leftMenu form #form li {
 }
 
 
-
-/*
-main #leftMenu #form li:after {
-    content: '';
-    width: 11px;
-    height: 11px;
-    border: groove 5px white;
-    border-radius: 10%;
-    position: absolute;
-    left: 2.5%;
-    
-    clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-    -webkit-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-    -moz-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-    -o-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-    -ms-clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 75% 25%, 75% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);
-    
-
-    
-}
-*/
 
 main #leftMenu li a {
     text-decoration: none;
@@ -541,18 +544,18 @@ main #leftMenu #filter {
     border-radius: 3px;
     font-size: 20px;
     background-image: linear-gradient(to bottom, #1eb2d5,
-        #20798e);
+            #20798e);
     background-image: linear-gradient(to bottom, #1eb2d5,
-        #20798e);
+            #20798e);
     background-image: -webkit-linear-gradient(to bottom, #1eb2d5,
-        #20798e);
+            #20798e);
     background-image: -moz-linear-gradient(to bottom, #1eb2d5,
-        #20798e);
+            #20798e);
     background-image: -ms-linear-gradient(to bottom, #1eb2d5,
-        #20798e);
+            #20798e);
 
     background-image: -o-linear-gradient(to bottom, #1eb2d5,
-        #20798e);
+            #20798e);
     position: relative;
     overflow: hidden;
 
@@ -560,31 +563,36 @@ main #leftMenu #filter {
 
 /* Filter Hover Effect Styles Start */
 
- 
- main #leftMenu #filter::after{
-        content: "";
-        position: absolute;
-        width: 50px;
-        height: 100%;
-        transform: skewX(-45deg);
-        background-color: rgba(255, 255, 255, 0.63);
-        opacity: 1;
-        bottom: 0;
+
+main #leftMenu #filter::after {
+    content: "";
+    position: absolute;
+    width: 50px;
+    height: 100%;
+    transform: skewX(-45deg);
+    background-color: rgba(255, 255, 255, 0.63);
+    opacity: 1;
+    bottom: 0;
+    left: -55%;
+
+
+}
+
+main #leftMenu #filter:hover::after {
+    animation: hover .5s ease;
+
+}
+
+@keyframes hover {
+    0% {
         left: -55%;
-     
-   
     }
 
-main #leftMenu #filter:hover::after{
-        animation: hover .5s ease;
-      
+    99% {
+        left: 115%;
     }
-    
-    @keyframes hover {
-        0% {left: -55%;}
-        99% {left: 115%;}
 
-    }
+}
 
 /* Filter Hover Effect Styles End */
 
@@ -601,14 +609,14 @@ main #rightMenu #leftOfRight {
     width: 80%;
     display: flex;
     flex-direction: row;
-    align-items: flex-end;
     flex-wrap: wrap;
     justify-content: space-between;
-    margin-right: 2.5%;
+
+
 }
 
 main #rightMenu #rightOfRight {
-    width: 19.6%;
+    width: 15%;
     border: dashed 1px black;
 
 }

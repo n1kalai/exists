@@ -17,10 +17,24 @@
 
     <!--    this.styles-->
     <link rel="stylesheet" href="styles/styles.css">
+    <!--    News Styles -->
+    <link rel="stylesheet" href="styles/news.css">
+    <meta name="referrer" content="unsafe-url">
 
     <title>Document</title>
     <!--    Bx Slider Js-->
     <script src="javascript/jquery.bxslider.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.mainDiv').bxSlider({
+                auto: true,
+                autoHover: true,
+                pause: '4000',
+                randomStart: true
+            });
+        });
+
+    </script>
 
 
 
@@ -49,10 +63,6 @@
                 <li class="nav-item"><a href="#" class="nav-link"> აქციები</a></li>
 
                 <li class="nav-item"><a href="#" class="nav-link"> კონტაქტი</a></li>
-
-
-
-
             </ul>
         </nav>
         <!-- Search bar and i -->
@@ -62,8 +72,6 @@
                 <button type="submit" class="ser">
                     <i class="fas fa-search"></i></button>
             </label>
-
-
         </form>
         <li class="nav-item regist"> <a class="nav-link">პროფილი </a></li>
 
@@ -180,24 +188,7 @@
     </section>
     <!-- Slider start -->
     <section class="mainDiv">
-        <script>
-            $(document).ready(function() {
-                $('.mainDiv').bxSlider({
-                    auto: true,
-                    autoHover: true,
-                    pause: '4000',
-                    randomStart: true,
 
-
-
-
-
-
-
-                });
-            });
-
-        </script>
         <article class="inner">
             <img src="img/sliderImages/office.png" alt="">
             <article class="sideBar">
@@ -209,7 +200,7 @@
                 </div>
 
             </article>
-            <button class="nexter"> &#10006; </button>
+            <button class="nexter"> <img src="img/arrows/arrow.png" alt=""> </button>
         </article>
         <article class="inner">
             <img src="https://i.ytimg.com/vi/UJ6GmaZVFkU/maxresdefault.jpg" alt="">
@@ -221,7 +212,7 @@
                 </div>
 
             </article>
-            <button class="nexter"> &#10006; </button>
+            <button class="nexter"> <img src="img/arrows/arrow.png" alt=""> </button>
         </article>
         <article class="inner">
             <img src="https://www.rd.com/wp-content/uploads/2018/09/airplane.jpg" alt="">
@@ -233,7 +224,7 @@
                 </div>
 
             </article>
-            <button class="nexter"> &#10006; </button>
+            <button class="nexter" style="background-image: url(img/arrows/arrow.png);background-repeat: no-repeat;background-position: center;background-size: cover;"> </button>
         </article>
         <article class="inner">
             <img src="https://www.rd.com/wp-content/uploads/2018/09/airplane.jpg" alt="">
@@ -245,7 +236,7 @@
                 </div>
 
             </article>
-            <button class="nexter"> &#10006; </button>
+            <button class="nexter"> <img src="img/arrows/arrow.png" alt=""> </button>
         </article>
 
 
@@ -422,7 +413,7 @@
         <!-- Aqciiis artiklebi -->
         <section class="sectionFooter">
             <h2 style="display: none;">astala</h2>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -455,7 +446,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -488,7 +479,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -521,7 +512,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -556,7 +547,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -672,7 +663,7 @@
         <!-- Aqciiis artiklebi -->
         <section class="sectionFooter">
             <h2 style="display: none;">astala</h2>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -705,7 +696,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -738,7 +729,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -771,7 +762,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -806,7 +797,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -922,7 +913,7 @@
         <!-- Aqciiis artiklebi -->
         <section class="sectionFooter">
             <h2 style="display: none;">astala</h2>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -955,7 +946,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -988,7 +979,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -1021,7 +1012,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
@@ -1056,7 +1047,7 @@
                 </figure>
 
             </article>
-            <article>
+            <article class="newsArt">
 
 
                 <figure class="imagesforSlide">
